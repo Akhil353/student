@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Student Blog
+title: Akhil's Blog
 ---
 
 # <center><span style="color: #16F529;">Akhil's Blog</span></center>
@@ -16,7 +16,7 @@ title: Student Blog
 src="https://www.youtube.com/embed/cFslUSyfZPc">
 
 
-## <span style="color: yellow;">Why I'm doing CSP</span>
+## <span style="color: orange;">Why I'm doing CSP</span>
 I have been doing coding for the past year, and I have slowly fallen down into the rabbit hole that is coding. From doing USACO to writing small and simple projects such as a calculator, I have enjoyed coding things more and more. I'm taking CSP to learn how to think more like a coder and advance my skills in working with others and problem-solving.
 
 ## <span style="color: purple;">Plans for CSP</span>
