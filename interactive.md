@@ -1,9 +1,34 @@
-
-[Click me](https://github.com/Akhil353/student){: .btn}
-
 <html>
 
 <head>
+<head>
+<style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button2 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button3 {background-color: #555555;} /* Black */
+</style>
+</head>
+<body>
+
+
+<button class="button">Add New Blog</button>
+<button class="button button2">AP CSP Slack</button>
+<button class="button button3">Canvas Page</button>
+
+
+</body>
 	<title>JavaScript Calculator</title>
 	<script src=
 "https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
