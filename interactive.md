@@ -23,9 +23,11 @@
 <body>
 
 
+<center>
 <button class="button">Add New Blog</button>
-<button class="button button2">AP CSP Slack</button>
-<button class="button button3">Canvas Page</button>
+<button class="button button2" onclick=" window.open('https://app.slack.com/client/TUDAF53UJ/CUS8E3M6Z', '_blank'); return false;">AP CSP Slack</button>
+<button class="button button3" onclick=" window.open('https://poway.instructure.com/courses/141645', '_blank'); return false;">Canvas Page</button>
+</center>
 
 
 </body>
