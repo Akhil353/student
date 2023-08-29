@@ -2,6 +2,11 @@
 layout: default
 title: Akhil's Blog
 ---
+<style>
+.rounded {
+  border-radius: 50%;
+}
+</style>
 
 # <center><span style="color: #16F529;">Akhil's Blog</span></center>
 ---
@@ -15,6 +20,8 @@ title: Akhil's Blog
 - <iframe width="660" height="360"
 src="https://www.youtube.com/embed/cFslUSyfZPc">
 
+
+<img class="rounded" src="valorant-logo-FAB2CA0E55-seeklogo.com.png" alt="Test">
 
 ## <span style="color: orange;">Why I'm doing CSP</span>
 I have been doing coding for the past year, and I have slowly fallen down into the rabbit hole that is coding. From doing USACO to writing small and simple projects such as a calculator, I have enjoyed coding things more and more. I'm taking CSP to learn how to think more like a coder and advance my skills in working with others and problem-solving.
