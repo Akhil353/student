@@ -44,15 +44,12 @@
 "sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
 		crossorigin="anonymous"
 		referrerpolicy="no-referrer"></script>
-	
-	<!-- For styling -->
 	<style>
 		table {
 			border: 1px solid black;
 			margin-left: auto;
 			margin-right: auto;
 		}
-
 		input[type="button"] {
 			width: 100%;
 			padding: 20px 40px;
@@ -63,7 +60,6 @@
 			border: none;
 			border-radius: 5px;
 		}
-
 		input[type="text"] {
 			padding: 20px 30px;
 			font-size: 24px;
@@ -76,7 +72,6 @@
 </head>
 	
 <body>
-	
 	<!-- Use Table to Create Calculator Structure Design -->
 	<table id="calcu">
 		<tr>
@@ -118,22 +113,16 @@
 						onkeydown="myFunction(event)"> </td>
 			<td><input type="button" value="." onclick="dis('.')"
 						onkeydown="myFunction(event)"> </td>
-			
-			<!-- solve function call function solve to evaluate value -->
 			<td><input type="button" value="=" onclick="solve()"> </td>
-
 			<td><input type="button" value="+" onclick="dis('+')"
 						onkeydown="myFunction(event)"> </td>
 		</tr>
 	</table>
-
 	<script>
-		
 		// Function that display value
 		function dis(val) {
 			document.getElementById("result").value += val
 		}
-
 		function myFunction(event) {
 			if (event.key == '0' || event.key == '1'
 				|| event.key == '2' || event.key == '3'
@@ -144,7 +133,6 @@
 				|| event.key == '*' || event.key == '/')
 				document.getElementById("result").value += event.key;
 		}
-
 		var cal = document.getElementById("calcu");
 		cal.onkeyup = function (event) {
 			if (event.keyCode === 13) {
@@ -154,15 +142,12 @@
 				solve();
 			}
 		}
-
 		// Function that evaluates the digit and return result
 		function solve() {
 			let x = document.getElementById("result").value
 			let y = math.evaluate(x)
 			document.getElementById("result").value = y
 		}
-
-		// Function that clear the display
 		function clr() {
 			document.getElementById("result").value = ""
 		}
