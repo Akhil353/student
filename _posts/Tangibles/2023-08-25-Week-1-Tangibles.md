@@ -10,4 +10,10 @@ courses: { compsci: {week: 1} }
 
 # <span style="color: red;">Goals Accomplished</span>
 
-- 
+- Added interactive page with buttons and a functional calculator
+
+- Customized index.md
+
+- Switched themes of the website
+
+- Found a solution to Error: 127 bug
