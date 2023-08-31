@@ -174,7 +174,7 @@ h1:hover {
 </script>
 
 <div class="typewriter">
-    <h1><span style="color: #02ed06;">Akhil's Blog</span></h1>
+    <h1><span style="color: #e100ff;">Akhil's Blog</span></h1>
 </div>
 
 <div id="loader-wrapper">
@@ -186,7 +186,7 @@ h1:hover {
 <br>
 
 
-## <span style="color: red;">About Me</span> 
+## About Me
 - <p>CSP is lit</p>
 - <p>Valorant Enthusiast (Diamond 2)</p>
      - ![Valorant Logo Image](images/valorant-logo-FAB2CA0E55-seeklogo.com.png)
@@ -196,10 +196,10 @@ h1:hover {
 - <iframe width="660" height="360"
 src="https://www.youtube.com/embed/cFslUSyfZPc">
 
-## <span style="color: orange;">Why I'm doing CSP</span>
+## Why I'm doing CSP
 <p>I have been doing coding for the past year, and I have slowly fallen down into the rabbit hole that is coding. From doing USACO to writing small and simple projects such as a calculator, I have enjoyed coding things more and more. I'm taking CSP to learn how to think more like a coder and advance my skills in working with others and problem-solving.</p>
 
-## <span style="color: purple;">Plans for CSP</span>
+## Plans for CSP
 
 - [x] Create a GitHub Repository
 - [x] Figure out how to debug code with errors
