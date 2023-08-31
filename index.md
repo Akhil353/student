@@ -3,6 +3,10 @@ layout: default
 title: Akhil's Blog
 ---
 <style>
+p {
+  color: #02b2ed;
+}
+
   #loader-wrapper {
   position: fixed;
   top: 0;
@@ -170,7 +174,7 @@ h1:hover {
 </script>
 
 <div class="typewriter">
-    <h1>Akhil's Blog</h1>
+    <h1><span style="color: #02ed06;">Akhil's Blog</span></h1>
 </div>
 
 <div id="loader-wrapper">
@@ -182,18 +186,18 @@ h1:hover {
 <br>
 
 
-## <span style="color: blue;">About Me</span> 
-- CSP is lit
-- Valorant Enthusiast (Diamond 2)
+## <span style="color: red;">About Me</span> 
+- <p>CSP is lit</p>
+- <p>Valorant Enthusiast (Diamond 2)</p>
      - ![Valorant Logo Image](images/valorant-logo-FAB2CA0E55-seeklogo.com.png)
-- Sophomore :)
+- <p>Sophomore :)</p>
 - <img src="images/IMG_6005.jpeg">
-- Cool video I found interesting
+- <p>Cool video I found interesting</p>
 - <iframe width="660" height="360"
 src="https://www.youtube.com/embed/cFslUSyfZPc">
 
 ## <span style="color: orange;">Why I'm doing CSP</span>
-I have been doing coding for the past year, and I have slowly fallen down into the rabbit hole that is coding. From doing USACO to writing small and simple projects such as a calculator, I have enjoyed coding things more and more. I'm taking CSP to learn how to think more like a coder and advance my skills in working with others and problem-solving.
+<p>I have been doing coding for the past year, and I have slowly fallen down into the rabbit hole that is coding. From doing USACO to writing small and simple projects such as a calculator, I have enjoyed coding things more and more. I'm taking CSP to learn how to think more like a coder and advance my skills in working with others and problem-solving.</p>
 
 ## <span style="color: purple;">Plans for CSP</span>
 
@@ -202,3 +206,5 @@ I have been doing coding for the past year, and I have slowly fallen down into t
 - [ ] Learn JavaScript and Python
 - [ ] Create my first project
 - [ ] Collaborate with others on projects
+
+
