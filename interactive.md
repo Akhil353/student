@@ -15,7 +15,6 @@
   margin: 4px 2px;
   cursor: pointer;
 }
-
 .button2 {background-color: #e7e7e7; color: black;} /* Gray */ 
 .button3 {background-color: #555555;} /* Black */
 </style>
