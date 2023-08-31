@@ -1,13 +1,14 @@
 ---
 toc: true
 comments: false
-layout: post
+layout: default
 title: Game of Life
-description: Example Blog!!!  This shows planning and notes from hacks.
+description: Play the Game of Life!
 type: hacks
 courses: { compsci: {week: 2} }
 ---
 
+## <span style="color: #02ed06;">The Game of Life</span>
 <style>
     #container {
     display: grid;
@@ -21,7 +22,7 @@ courses: { compsci: {week: 2} }
 
 <div class="container">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
-        <span class="fs-4">Remix of Game of Life</span>
+        <span class="fs-4"></span>
     </header>
     <!-- Buttons that link to functions in javascript -->
     <button onclick="start()" id="start-btn">start</button>
