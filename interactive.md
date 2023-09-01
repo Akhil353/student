@@ -153,3 +153,111 @@
 </body>
 
 </html>
+
+
+<head>
+    <!-- load jQuery and DataTables output style and scripts -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>var define = null;</script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+</head>
+
+<!-- Body contains the contents of the Document -->
+<body>
+    <table id="demo" class="table">
+        <thead>
+            <tr>
+                <th><span style="color: #02b2ed;">Map</span></th>
+                <th><span style="color: #02b2ed;">Agent</span></th>
+                <th><span style="color: #02b2ed;">K/D</span></th>
+                <th><span style="color: #02b2ed;">Leaderboard Place</span></th>
+                <th><span style="color: #02b2ed;">Win or Loss</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Split</td>
+                <td>Jett</td>
+                <td>0.7</td>
+                <td>8th</td>
+                <td>Loss</td>
+            </tr>
+            <tr>
+                <td>Bind</td>
+                <td>Jett</td>
+                <td>0.9</td>
+                <td>7th</td>
+                <td>Win</td>
+            </tr>
+            <tr>
+                <td>Ascent</td>
+                <td>Jett</td>
+                <td>0.6</td>
+                <td>9th</td>
+                <td>Loss</td>
+            </tr>
+            <tr>
+                <td>Haven</td>
+                <td>Jett</td>
+                <td>1.2</td>
+                <td>7th</td>
+                <td>Win</td>
+            </tr>
+            <tr>
+                <td>Haven</td>
+                <td>Jett</td>
+                <td>0.9</td>
+                <td>3rd</td>
+                <td>Loss</td>
+            </tr>
+            <tr>
+                <td>Fracture</td>
+                <td>Jett</td>
+                <td>0.9</td>
+                <td>6th</td>
+                <td>Loss</td>
+            </tr>
+            <tr>
+                <td>Ascent</td>
+                <td>Jett</td>
+                <td>1.1</td>
+                <td>3rd</td>
+                <td>Win</td>
+            </tr>
+            <tr>
+                <td>Bind</td>
+                <td>Jett</td>
+                <td>0.8</td>
+                <td>9th</td>
+                <td>Win</td>
+            </tr>
+            <tr>
+                <td>Ascent</td>
+                <td>Jett</td>
+                <td>1.1</td>
+                <td>3rd</td>
+                <td>Win</td>
+            </tr>
+            <tr>
+                <td>Lotus</td>
+                <td>Jett</td>
+                <td>2.1</td>
+                <td>1st</td>
+                <td>Win</td>
+            </tr>
+            <tr>
+                <td>Pearl</td>
+                <td>Jett</td>
+                <td>1.2</td>
+                <td>9th</td>
+                <td>Win</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+<!-- Script is used to embed executable code -->
+<script>
+    $("#demo").DataTable();
+</script>

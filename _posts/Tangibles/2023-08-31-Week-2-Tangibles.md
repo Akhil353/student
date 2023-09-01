@@ -10,7 +10,7 @@ courses: { compsci: {week: 2} }
 
 # <span style="color: red;">Highest Priority tasks finished</span>
 
-- Created quiz.py
+- Created quiz.ipynb
 
 - Created a custom theme
 
@@ -18,7 +18,7 @@ courses: { compsci: {week: 2} }
 
 # <span style="color: blue;">Other finished tasks</span>
 
-- Implemented a game into a page
+- Implemented the Game of Life into a page
 
 - Added rounded(circle) images
 
