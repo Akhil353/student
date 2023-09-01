@@ -7,6 +7,7 @@ description: The statistics for all the competitive valorant games I play
 type: hacks
 courses: { compsci: {week: 2} }
 ---
+<span style="color: #e100ff;">Valorant Competitive Statistics</span>
 
 <head>
     <!-- load jQuery and DataTables output style and scripts -->

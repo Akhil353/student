@@ -8,7 +8,7 @@ type: hacks
 courses: { compsci: {week: 2} }
 ---
 
-## <span style="color: #02ed06;">The Game of Life</span>
+## <span style="color: #e100ff;">The Game of Life</span>
 <style>
     #container {
     display: grid;

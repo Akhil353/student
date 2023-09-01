@@ -7,6 +7,8 @@ type: hacks
 courses: {'compsci': {'week': 1}}
 ---
 
+## <span style="color: #e100ff;">JavaScript Calculator</span>
+
 <html>
 <title>JavaScript Calculator</title>
 	<script src=
