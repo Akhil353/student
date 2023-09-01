@@ -6,6 +6,20 @@ title: Akhil's Blog
 p {
   color: #02b2ed;
 }
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button2 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button3 {background-color: #555555;} /* Black */
 
   #loader-wrapper {
   position: fixed;
@@ -206,5 +220,10 @@ src="https://www.youtube.com/embed/cFslUSyfZPc">
 - [ ] Learn JavaScript and Python
 - [ ] Create my first project
 - [ ] Collaborate with others on projects
+
+<center>
+<button class="button button2" onclick=" window.open('https://app.slack.com/client/TUDAF53UJ/CUS8E3M6Z', '_blank'); return false;">AP CSP Slack</button>
+<button class="button button3" onclick=" window.open('https://poway.instructure.com/courses/141645', '_blank'); return false;">Canvas Page</button>
+</center>
 
 
