@@ -20,6 +20,8 @@ courses: { compsci: {week: 2} }
 
 - Implemented the Game of Life into a page
 
+- Added a chart for valorant competitive game statistics
+
 - Added rounded(circle) images
 
 # <span style="color: orange;">Pending tasks</span>
