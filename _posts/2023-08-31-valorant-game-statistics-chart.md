@@ -5,9 +5,9 @@ layout: default
 title: Valorant Statistics
 description: The statistics for all the competitive valorant games I play
 type: hacks
-courses: { compsci: {week: 2} }
+courses: { timebox: {week: 2} }
 ---
-<span style="color: #e100ff;">Valorant Competitive Statistics</span>
+# <span style="color: #8c2fc2;">Valorant Competitive Statistics</span>
 
 <head>
     <!-- load jQuery and DataTables output style and scripts -->
@@ -17,16 +17,28 @@ courses: { compsci: {week: 2} }
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
 </head>
 
+<style>
+    .table {
+        color: #eeeeee;
+    }
+    th {
+        color: #dddddd;
+    }
+
+    * {
+        color: #dddddd;
+     }
+</style>
 <!-- Body contains the contents of the Document -->
 <body>
     <table id="demo" class="table">
         <thead>
             <tr>
-                <th><span style="color: #02b2ed;">Map</span></th>
-                <th><span style="color: #02b2ed;">Agent</span></th>
-                <th><span style="color: #02b2ed;">K/D</span></th>
-                <th><span style="color: #02b2ed;">Leaderboard Place</span></th>
-                <th><span style="color: #02b2ed;">Win or Loss</span></th>
+                <th>Map</th>
+                <th>Agent</th>
+                <th>K/D</th>
+                <th>Leaderboard Place</th>
+                <th>Win or Loss</th>
             </tr>
         </thead>
         <tbody>

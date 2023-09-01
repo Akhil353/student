@@ -5,7 +5,7 @@ layout: default
 title: Week 0 Tangibles
 description: Everything I accomplished from my plans for this week
 type: tangibles
-courses: { compsci: {week: 0} }
+courses: { timebox: {week: 0} }
 ---
 
 # <span style="color: red;">Goals Accomplished</span>

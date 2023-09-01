@@ -5,7 +5,7 @@ layout: default
 title: Week 2 Tangibles
 description: Everything I accomplished from my plans for this week
 type: tangibles
-courses: { compsci: {week: 2} }
+courses: { timebox: {week: 2} }
 ---
 
 # <span style="color: red;">Highest Priority tasks finished</span>

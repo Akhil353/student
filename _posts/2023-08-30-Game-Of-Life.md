@@ -5,10 +5,10 @@ layout: default
 title: Game of Life
 description: Play the Game of Life!
 type: hacks
-courses: { compsci: {week: 2} }
+courses: { timebox: {week: 2} }
 ---
 
-## <span style="color: #e100ff;">The Game of Life</span>
+# <span style="color: #8c2fc2;">The Game of Life</span>
 <style>
     #container {
     display: grid;

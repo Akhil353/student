@@ -4,10 +4,10 @@ comments: False
 layout: default
 title: JS Calculator
 type: hacks
-courses: {'compsci': {'week': 1}}
+courses: {'timebox': {'week': 1}}
 ---
 
-## <span style="color: #e100ff;">JavaScript Calculator</span>
+# <span style="color: #8c2fc2;">JavaScript Calculator</span>
 
 <html>
 <title>JavaScript Calculator</title>
