@@ -1,0 +1,11 @@
+# CSP course meta data
+Unit1:
+  title: Build up the TimeBox
+  description:  All the plans, tangibles, and hacks I created over the course of the first 3 weeks.
+  start: 0
+  end: 3
+Unit2:
+  title: Learn Language
+  description: Learn JavaScript and Python. Start Code Code Coding!!!
+  start: 4
+  end: 7

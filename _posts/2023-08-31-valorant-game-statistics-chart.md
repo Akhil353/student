@@ -38,7 +38,7 @@ courses: { timebox: {week: 2} }
                 <th>Agent</th>
                 <th>K/D</th>
                 <th>Leaderboard Place</th>
-                <th>Win or Loss</th>
+                <th><span style="color: #34e00d;">Win</span> or <span style="color: #d92323;">Loss</span></th>
             </tr>
         </thead>
         <tbody>
@@ -47,77 +47,77 @@ courses: { timebox: {week: 2} }
                 <td>Jett</td>
                 <td>0.7</td>
                 <td>8th</td>
-                <td>Loss</td>
+                <td><span style="color: #d92323;"><span style="color: #d92323;">Loss</span></span></td>
             </tr>
             <tr>
                 <td>Bind</td>
                 <td>Jett</td>
-                <td>0.9</td>
-                <td>7th</td>
-                <td>Win</td>
+                <td>1.9</td>
+                <td><span style="color: #f5e90a;">MVP</span></td>
+                <td><span style="color: #34e00d;">Win</span></td>
             </tr>
             <tr>
                 <td>Ascent</td>
                 <td>Jett</td>
                 <td>0.6</td>
                 <td>9th</td>
-                <td>Loss</td>
+                <td><span style="color: #d92323;">Loss</span></td>
             </tr>
             <tr>
                 <td>Haven</td>
                 <td>Jett</td>
                 <td>1.2</td>
                 <td>7th</td>
-                <td>Win</td>
+                <td><span style="color: #34e00d;">Win</span></td>
             </tr>
             <tr>
                 <td>Haven</td>
                 <td>Jett</td>
                 <td>0.9</td>
                 <td>3rd</td>
-                <td>Loss</td>
+                <td><span style="color: #d92323;">Loss</span></td>
             </tr>
             <tr>
                 <td>Fracture</td>
                 <td>Jett</td>
                 <td>0.9</td>
                 <td>6th</td>
-                <td>Loss</td>
+                <td><span style="color: #d92323;">Loss</span></td>
             </tr>
             <tr>
                 <td>Ascent</td>
                 <td>Jett</td>
                 <td>1.1</td>
                 <td>3rd</td>
-                <td>Win</td>
+                <td><span style="color: #34e00d;">Win</span></td>
             </tr>
             <tr>
                 <td>Bind</td>
                 <td>Jett</td>
-                <td>0.8</td>
-                <td>9th</td>
-                <td>Win</td>
+                <td>2.8</td>
+                <td><span style="color: #f5e90a;">MVP</span></td>
+                <td><span style="color: #34e00d;">Win</span></td>
             </tr>
             <tr>
                 <td>Ascent</td>
                 <td>Jett</td>
                 <td>1.1</td>
                 <td>3rd</td>
-                <td>Win</td>
+                <td><span style="color: #34e00d;">Win</span></td>
             </tr>
             <tr>
                 <td>Lotus</td>
                 <td>Jett</td>
                 <td>2.1</td>
-                <td>1st</td>
-                <td>Win</td>
+                <td><span style="color: #f5e90a;">MVP</span></td>
+                <td><span style="color: #34e00d;">Win</span></td>
             </tr>
             <tr>
                 <td>Pearl</td>
                 <td>Jett</td>
                 <td>1.2</td>
                 <td>9th</td>
-                <td>Win</td>
+                <td><span style="color: #34e00d;">Win</span></td>
             </tr>
         </tbody>
     </table>
