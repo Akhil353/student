@@ -1,12 +1,13 @@
 ---
 toc: true
-comments: false
+comments: true
 layout: default
 title: Valorant Statistics
 description: The statistics for all the competitive valorant games I play
 type: hacks
 courses: { timebox: {week: 2} }
 ---
+
 # <span style="color: #8c2fc2;">Valorant Competitive Statistics</span>
 
 <head>

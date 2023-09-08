@@ -1,6 +1,6 @@
 ---
 toc: true
-comments: false
+comments: true
 layout: default
 title: Game of Life
 description: Play the Game of Life!

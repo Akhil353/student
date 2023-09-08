@@ -1,6 +1,6 @@
 ---
 toc: True
-comments: False
+comments: true
 layout: default
 title: JS Calculator
 type: hacks

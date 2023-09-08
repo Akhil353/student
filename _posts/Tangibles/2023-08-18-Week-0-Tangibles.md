@@ -1,6 +1,6 @@
 ---
 toc: true
-comments: false
+comments: true
 layout: default
 title: Week 0 Tangibles
 description: Everything I accomplished from my plans for this week
