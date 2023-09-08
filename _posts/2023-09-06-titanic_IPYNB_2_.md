@@ -2,8 +2,8 @@
 toc: True
 comments: False
 layout: default
-title: TBD
-description: TBD
+title: Titanic Simulator
+description: Simulate your survival rate on the Titanic!
 type: hacks
 courses: {'timebox': {'week': 3}}
 ---
