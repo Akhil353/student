@@ -2,26 +2,10 @@
 layout: default
 title: Akhil's Blog
 ---
-<style>
-p {
-  color: #02b2ed;
-}
-.button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-.button2 {background-color: #e7e7e7; color: black;} /* Gray */ 
-.button3 {background-color: #555555;} /* Black */
 
-  #loader-wrapper {
+
+<style>
+#loader-wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -36,8 +20,6 @@ p {
   height: 100%;
   background: #000;
   z-index: 1000;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
 }
 #loader-wrapper .loader-section.section-left {
   left: 0;
@@ -55,7 +37,7 @@ p {
   margin: -75px 0 0 -75px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #3498db;
+  border-top-color: #1f1137;
   -webkit-animation: spin 2s linear infinite;
           animation: spin 2s linear infinite;
   z-index: 99999;
@@ -69,7 +51,7 @@ p {
   bottom: 5px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #e74c3c;
+  border-top-color: #9370DB;
   -webkit-animation: spin 3s linear infinite;
           animation: spin 3s linear infinite;
 }
@@ -82,10 +64,11 @@ p {
   bottom: 15px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #f9c922;
+  border-top-color: #CBC3E3;
   -webkit-animation: spin 1.5s linear infinite;
           animation: spin 1.5s linear infinite;
 }
+/*
 .loaded #loader-wrapper {
   visibility: hidden;
   -webkit-transform: translateY(-100%);
@@ -104,12 +87,40 @@ p {
           transform: translateX(100%);
   -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+} 
+*/
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-.loaded #loader {
-  opacity: 0;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+
+.loaded #loader-wrapper {
+  visibility: hidden;
+  -webkit-transition: fadeOut 2.0s ease;
+  animation: fadeOut 2.0s ease forwards;
 }
+
+.loaded #loader-wrapper .loader-section-left {  
+  -webkit-transition: fadeOut 2.0s ease;
+  animation: fadeOut 2.0s ease forwards;
+}
+
+.loaded #loader-wrapper .loader-section-right {  
+  -webkit-transition: fadeOut 2.0s ease;
+  animation: fadeOut 2.0s ease forwards;
+}
+
+
+/* .loaded #loader-wrapper {
+  visbility: none;
+} */
+
+/* Apply the animation when the loader is being faded out */
+
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -131,14 +142,6 @@ p {
   }
 }
 
-.loaded #loader-wrapper {
-  visibility: hidden;
-  transform: translateY(-100%);
-}
-.loaded #loader {
-  opacity: 0;
-}
-
 .typewriter h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   font-family: Monospace;
@@ -147,7 +150,7 @@ p {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.015em; /* Adjust as needed */
   animation: 
-    typing 2.5s steps(30, end),
+    typing 15.0s steps(30, end) infinite,
     blink-caret 1s step-end infinite;
   animation-delay: 2000ms;
   animation-fill-mode: both;
@@ -156,10 +159,13 @@ p {
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  0%, 50%, 100% {
+    width: 0;
+  }
+  25%, 75% {
+    width: 100%;
+  }
 }
-
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
@@ -186,6 +192,21 @@ h1:hover {
   }, 2000)
 });
 </script>
+
+<!-- <script>
+document.addEventListener("DOMContentLoaded", function() {
+  const words = ["Welcome", "to", "Srijan's", "Blog"];
+  let wordIndex = 0;
+  
+  function updateWord() {
+    const titleElement = document.querySelector(".typewriter h1");
+    titleElement.textContent = words[wordIndex];
+    wordIndex = (wordIndex + 1) % words.length;
+  }
+
+  setInterval(updateWord, 1); // Change word every 3.5 seconds
+});
+</script> -->
 
 <div class="typewriter">
     <h1><span style="color: #e100ff;">Akhil's Blog</span></h1>
