@@ -3,7 +3,6 @@ layout: default
 title: Akhil's Blog
 ---
 
-
 <style>
 #loader-wrapper {
   position: fixed;
@@ -226,25 +225,24 @@ document.addEventListener("DOMContentLoaded", function() {
 - <p>Valorant Enthusiast (Diamond 2)</p>
      - ![Valorant Logo Image](images/valorant-logo-FAB2CA0E55-seeklogo.com.png)
 - <p>Sophomore :)</p>
-- <img src="images/IMG_6005.jpeg">
 - <p>Cool video I found interesting</p>
 - <iframe width="660" height="360"
 src="https://www.youtube.com/embed/cFslUSyfZPc">
 
-## Why I'm doing CSP
-<p>I have been doing coding for the past year, and I have slowly fallen down into the rabbit hole that is coding. From doing USACO to writing small and simple projects such as a calculator, I have enjoyed coding things more and more. I'm taking CSP to learn how to think more like a coder and advance my skills in working with others and problem-solving.</p>
 
 ## Plans for CSP
 
 - [x] Create a GitHub Repository
 - [x] Figure out how to debug code with errors
-- [ ] Learn JavaScript and Python
-- [ ] Create my first project
-- [ ] Collaborate with others on projects
+- [x] Learn JavaScript and Python
+- [x] Create my first project
+- [x] Collaborate with others on projects
+- [ ] More on the way!
+
+- My Life:
+  - <img src="images/IMG_6005.jpeg">
 
 <center>
 <button class="button button2" onclick=" window.open('https://app.slack.com/client/TUDAF53UJ/CUS8E3M6Z', '_blank'); return false;">AP CSP Slack</button>
 <button class="button button3" onclick=" window.open('https://poway.instructure.com/courses/141645', '_blank'); return false;">Canvas Page</button>
 </center>
-
-
