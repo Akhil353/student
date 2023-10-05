@@ -2,10 +2,12 @@
 toc: True
 comments: False
 layout: default
-title: Program Functions
+title: Data Abstraction
+description: Popcorn Hacks + HW on Data Abstraction
 type: hacks
-courses: {'timebox': {'week': 5}}
+courses: {'timebox': {'week': 7}}
 ---
+
 ```py
 #Popcorn Hack 1
 me  = 'Akhil'
@@ -13,7 +15,7 @@ age = 354
 
 print(f"I am {me} and I am {age} years old!!! ☢︎")
 
-I am Akhil and I am 354 years old!!! ☢︎
+#I am Akhil and I am 354 years old!!! ☢︎
 ```
 
 ```py
@@ -23,9 +25,9 @@ print(type(boolean))
 print(type(me))
 print(type(age))
 
-<class 'bool'>
-<class 'str'>
-<class 'int'>
+#<class 'bool'>
+#<class 'str'>
+#<class 'int'>
 ```
 
 ```py
@@ -37,7 +39,7 @@ def get_z(x, y):
 
 get_z(10,20)
 
--285
+#-285
 ```
 
 
@@ -49,11 +51,11 @@ my_interests.append('Exercising')
 for interest in my_interests:
     print(interest)
 
-Coding
-Gaming
-Piano
-Reading
-Exercising
+#Coding
+#Gaming
+#Piano
+#Reading
+#Exercising
 ```
 
 ```py
@@ -86,14 +88,16 @@ people = {
 
 #print functions
 print_people(people)
+print('\n')
 print_oldest(people)
 
-Name: John
-Age: 32
-Name: Rob
-Age: 23
-Name: Amanda
-Age: 19
-The oldest person is John
+#Name: John
+#Age: 32
+#Name: Rob
+#Age: 23
+#Name: Amanda
+#Age: 19
+
+#The oldest person is John
 ```
 
