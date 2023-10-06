@@ -15,7 +15,7 @@ age = 354
 
 print(f"I am {me} and I am {age} years old!!! ☢︎")
 
-I am Akhil and I am 354 years old!!! ☢︎
+#I am Akhil and I am 354 years old!!! ☢︎
 ```
 
 ```py
@@ -25,9 +25,9 @@ print(type(boolean))
 print(type(me))
 print(type(age))
 
-<class 'bool'>
-<class 'str'>
-<class 'int'>
+#<class 'bool'>
+#<class 'str'>
+#<class 'int'>
 ```
 
 ```py
@@ -51,11 +51,11 @@ my_interests.append('Exercising')
 for interest in my_interests:
     print(interest)
 
-Coding
-Gaming
-Piano
-Reading
-Exercising
+#Coding
+#Gaming
+#Piano
+#Reading
+#Exercising
 ```
 
 ```py
@@ -112,16 +112,18 @@ while True:
     else:
         print("Invalid choice.")
 
-Name: Akhil
-Age: 15
-Name: Advik
-Age: 19
-Name: Srijan
-Age: 11
-Name: Aashray
-Age: 38
-The oldest person is Aashray.
-Ordered names list: ['Aashray', 'Advik', 'Akhil', 'Srijan']
-Ordered ages list: [11, 15, 19, 38]
+#Name: Akhil
+#Age: 15
+#Name: Advik
+#Age: 19
+#Name: Srijan
+#Age: 11
+#Name: Aashray
+#Age: 38
+
+#The oldest person is Aashray.
+
+#Ordered names list: ['Aashray', 'Advik', 'Akhil', 'Srijan']
+#Ordered ages list: [11, 15, 19, 38]
 ```
 
