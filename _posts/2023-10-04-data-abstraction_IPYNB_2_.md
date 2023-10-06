@@ -10,12 +10,12 @@ courses: {'timebox': {'week': 7}}
 
 ```py
 #Popcorn Hack 1
-me  = 'Akhil'
+me  = input("What is your name?")
 age = 354
 
 print(f"I am {me} and I am {age} years old!!! ☢︎")
 
-#I am Akhil and I am 354 years old!!! ☢︎
+I am Akhil and I am 354 years old!!! ☢︎
 ```
 
 ```py
@@ -25,9 +25,9 @@ print(type(boolean))
 print(type(me))
 print(type(age))
 
-#<class 'bool'>
-#<class 'str'>
-#<class 'int'>
+<class 'bool'>
+<class 'str'>
+<class 'int'>
 ```
 
 ```py
@@ -39,7 +39,7 @@ def get_z(x, y):
 
 get_z(10,20)
 
-#-285
+-285
 ```
 
 
@@ -51,11 +51,11 @@ my_interests.append('Exercising')
 for interest in my_interests:
     print(interest)
 
-#Coding
-#Gaming
-#Piano
-#Reading
-#Exercising
+Coding
+Gaming
+Piano
+Reading
+Exercising
 ```
 
 ```py
@@ -78,26 +78,38 @@ def print_oldest(list_of_people):
     x = x.index(max(x))
     print(f"The oldest person is {list(list_of_people.keys())[x]}.")
 
-#Create a list of people
-people = {
-    "Akhil": 15,
-    "Advik": 27,
-    "Srijan": 18,
-    "Aashray": 6
-}
+#Create a dictionary of people
+people = {}
+
+keep_going = 'Y'
+while keep_going == 'Y':
+    person = input('Enter person name: ')
+    people[person] = int(input('Input person age: '))
+    keep_going = input('Add another person [Y/N]? ').upper()
+
+def print_ordered(people):
+    names = list(people.keys())
+    ages = list(people.values())
+
+    print(f'Ordered names: {[name for name in names.sort()]}')
+    print(f'Ordered ages: {[age for age in ages.sort()]}')
 
 #print functions
 print_people(people)
 print('\n')
 print_oldest(people)
+print('\n')
+print_ordered(people)
 
-#Name: John
-#Age: 32
-#Name: Rob
-#Age: 23
-#Name: Amanda
-#Age: 19
+Name: Akhil
+Age: 15
+Name: Advik
+Age: 27
+Name: Srijan
+Age: 18
+Name: Aashray
+Age: 6
 
-#The oldest person is John
+The oldest person is Advik
 ```
 
