@@ -90,26 +90,38 @@ while keep_going == 'Y':
 def print_ordered(people):
     names = list(people.keys())
     ages = list(people.values())
+    names.sort()
+    ages.sort()
 
-    print(f'Ordered names: {[name for name in names.sort()]}')
-    print(f'Ordered ages: {[age for age in ages.sort()]}')
+    print(f'Ordered names list: {names}')
+    print(f'Ordered ages list: {ages}')
 
-#print functions
-print_people(people)
-print('\n')
-print_oldest(people)
-print('\n')
-print_ordered(people)
+
+#Menu to print specifc things
+while True:
+    choice = input("Choose an option:\n1. Print info on everyone\n2. Find oldest person\n3. Order info on everyone into names and ages\n4. Exit\n")
+    
+    if choice == '1':
+        print_people(people)
+    elif choice == '2':
+        print_oldest(people)
+    elif choice == '3':
+        print_ordered(people)
+    elif choice == '4':
+        break
+    else:
+        print("Invalid choice.")
 
 Name: Akhil
 Age: 15
 Name: Advik
-Age: 27
+Age: 19
 Name: Srijan
-Age: 18
+Age: 11
 Name: Aashray
-Age: 6
-
-The oldest person is Advik
+Age: 38
+The oldest person is Aashray.
+Ordered names list: ['Aashray', 'Advik', 'Akhil', 'Srijan']
+Ordered ages list: [11, 15, 19, 38]
 ```
 
