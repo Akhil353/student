@@ -2,8 +2,6 @@
 toc: True
 comments: False
 layout: default
-title: Data Abstraction
-description: Popcorn Hacks + HW on Data Abstraction
 type: hacks
 courses: {'timebox': {'week': 7}}
 ---
