@@ -13,7 +13,7 @@ courses: { timebox: {week: 7} }
 #Popcorn hack #1
 y_values = []
 for x in range(0,11):
-    y_values.append(3*(x+2)-4)
+    y_values.append(3*(x+2)-4) 
 for y in y_values:
     print(y)
 
