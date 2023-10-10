@@ -2,10 +2,8 @@
 toc: false
 comments: true
 layout: post
-title: Student teaching
-description: Student teaching
 type: plans
-courses: { compsci: {week: 2} }
+courses: { compsci: {week: 7} }
 ---
 
 
@@ -126,18 +124,50 @@ print(sub)
 
 fibonacci = []
 #Create the fibonacci list
-for index in range(0,int(input("Enter how many numbers of the fibonacci sequence you want: ")) + 1):
-    if index == 0:
-        fibonacci.append(0)
-    elif index == 1:
-        fibonacci.append(1)
-    else:
-        fibonacci.append(fibonacci[index-2]+fibonacci[index-1])
+user = int(input("Enter how many numbers of the fibonacci sequence you want: "
+def fibonacci_iter(num):
+    for index in range(0, user + 1):
+        if index == 0:
+            fibonacci.append(0)
+        elif index == 1:
+            fibonacci.append(1)
+        else:
+            fibonacci.append(fibonacci[index-2]+fibonacci[index-1])
+    #Set an upper bound for the number value
+    user_input = int(input("Input a number you want to set as the highest level: "))
+    for num in fibonacci:
+        if num < user_input:
+            print(num)
+def get_fibonacci(user):
+    print(f"The final number of the fibonacci sequence is: {(1.618^user - (1-1.618) ^ user) / 5**1/2}")
 
-#Set an upper bound for the number value
-user_input = int(input("Input a number you want to set as the highest level: "))
-for num in fibonacci:
-    if num < user_input:
-        print(num)
+def fibonacci_recursive(num):
+    if num <= 0:
+        return 0
+    elif num == 1:
+        return 1
+    else:
+        return fibonacci_recursive(num - 1) + fibonacci_recursive(num - 2)
+
+
     
+fibonacci_iter(user)
+get_fibonacci(user)
+fibonacci_recursive(user)
+#Enter how many numbers of the fibonacci sequence you want: 10
+#Input a number you want to set as the highest level: 25
+
+#0
+#1
+#1
+#2
+#3
+#5
+#8
+#13
+#21
+
+#The final number of the fibonacci sequence is around 34
+
+#55
 ```

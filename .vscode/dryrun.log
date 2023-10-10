@@ -1,0 +1,78 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/Akhil/vscode/student_original'
+echo "Stopping server..."
+# kills process running on port 4200
+lsof -ti :4200 | xargs kill >/dev/null 2>&1 || true
+echo "Stopping logging process..."
+# kills previously running logging processes
+ps aux | awk -v log_file=/tmp/jekyll4200.log '$0 ~ "tail -f " log_file { print $2 }' | xargs kill >/dev/null 2>&1 || true
+# removes log
+rm -f /tmp/jekyll4200.log
+echo "Converting source _notebooks/2023-08-29-quiz.ipynb to destination _posts/2023-08-29-quiz_IPYNB_2_.md"
+python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-08-29-quiz.ipynb"
+echo "Converting source _notebooks/2023-08-30-basics-js-data-types.ipynb to destination _posts/2023-08-30-basics-js-data-types_IPYNB_2_.md"
+python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-08-30-basics-js-data-types.ipynb"
+echo "Converting source _notebooks/2023-09-06-titanic.ipynb to destination _posts/2023-09-06-titanic_IPYNB_2_.md"
+python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-09-06-titanic.ipynb"
+echo "Converting source _notebooks/2023-09-07-to-do-list.ipynb to destination _posts/2023-09-07-to-do-list_IPYNB_2_.md"
+python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-09-07-to-do-list.ipynb"
+echo "Converting source _notebooks/2023-09-11-for-loops.ipynb to destination _posts/2023-09-11-for-loops_IPYNB_2_.md"
+python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-09-11-for-loops.ipynb"
+echo "Converting source _notebooks/2023-09-14-basics-js-data-types.ipynb to destination _posts/2023-09-14-basics-js-data-types_IPYNB_2_.md"
+python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-09-14-basics-js-data-types.ipynb"
+echo "Converting source _notebooks/2023-09-18-Voila_Restaurant.ipynb to destination _posts/2023-09-18-Voila_Restaurant_IPYNB_2_.md"
+python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-09-18-Voila_Restaurant.ipynb"
+echo "Converting source _notebooks/2023-09-20-programs.ipynb to destination _posts/2023-09-20-programs_IPYNB_2_.md"
+python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-09-20-programs.ipynb"
+echo "Converting source _notebooks/2023-09-26-basics-html.ipynb to destination _posts/2023-09-26-basics-html_IPYNB_2_.md"
+python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-09-26-basics-html.ipynb"
+ 
+echo "Converting source _notebooks/2023-09-26-basics-js-errors.ipynb to destination _posts/2023-09-26-basics-js-errors_IPYNB_2_.md"
+python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-09-26-basics-js-errors.ipynb"
+echo "Converting source _notebooks/2023-09-26-basics-of-js.ipynb to destination _posts/2023-09-26-basics-of-js_IPYNB_2_.md"
+python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-09-26-basics-of-js.ipynb"
+echo "Converting source _notebooks/2023-09-26-flask.ipynb to destination _posts/2023-09-26-flask_IPYNB_2_.md"
+python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-09-26-flask.ipynb"
+ 
+echo "Converting source _notebooks/2023-09-27-basics-home.ipynb to destination _posts/2023-09-27-basics-home_IPYNB_2_.md"
+python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-09-27-basics-home.ipynb"
+echo "Converting source _notebooks/2023-10-04-data-abstraction.ipynb to destination _posts/2023-10-04-data-abstraction_IPYNB_2_.md"
+python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-10-04-data-abstraction.ipynb"
+echo "Converting source _notebooks/2023-10-05-algorithms.ipynb to destination _posts/2023-10-05-algorithms_IPYNB_2_.md"
+python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-10-05-algorithms.ipynb"
+echo "Starting server..."
+nohup bundle exec jekyll serve -H 0.0.0.0 -P 4200 > /tmp/jekyll4200.log 2>&1 & \
+		PID=$!; \
+		echo "Server PID: $PID"
+until [ -f /tmp/jekyll4200.log ]; do sleep 1; done
+echo "Terminal logging starting, watching server..."
+# tail and awk work together to extract Jekyll regeneration messages
+# When a _notebook is detected in the log, call make convert in the background
+# Note: We use the "if ($0 ~ /_notebooks\/.*\.ipynb/) { system(\"make convert &\") }" to call make convert
+(tail -f /tmp/jekyll4200.log | awk '/Server address: http:\/\/0.0.0.0:4200\/student\// { serverReady=1 } \
+	serverReady && /^ *Regenerating:/ { regenerate=1 } \
+	regenerate { \
+		if (/^[[:blank:]]*$/) { regenerate=0 } \
+		else { \
+			print; \
+			if ($0 ~ /_notebooks\/.*\.ipynb/) { system("make convert &") } \
+		} \
+	}') 2>/dev/null &
+# start an infinite loop with timeout to check log status
+for ((COUNTER = 0; ; COUNTER++)); do \
+		if grep -q "Server address:" /tmp/jekyll4200.log; then \
+			echo "Server started in $COUNTER seconds"; \
+			break; \
+		fi; \
+		if [ $COUNTER -eq 60 ]; then \
+			echo "Server timed out after $COUNTER seconds."; \
+			echo "Review errors from /tmp/jekyll4200.log."; \
+			cat /tmp/jekyll4200.log; \
+			exit 1; \
+		fi; \
+		sleep 1; \
+	done
+# outputs startup log, removes last line ($d) as ctl-c message is not applicable for background process
+sed '$d' /tmp/jekyll4200.log
+make: Leaving directory `/Users/Akhil/vscode/student_original'
+ 

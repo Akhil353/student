@@ -1,3 +1,4 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # GNU Make 3.81
 # Copyright (C) 2006  Free Software Foundation, Inc.
 # This is free software; see the source for copying conditions.
@@ -5,8 +6,11 @@
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
+make: *** No rule to make target `all'.  Stop.
 
-# Make data base, printed on Wed Sep 27 22:44:09 2023
+
+# Make data base, printed on Mon Oct  9 22:27:05 2023
 
 # Variables
 
@@ -21,7 +25,7 @@ VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # makefile (from `Makefile', line 13)
-NOTEBOOK_FILES := _notebooks/2023-08-28-basics-home.ipynb _notebooks/2023-08-28-basics-html.ipynb _notebooks/2023-08-28-basics-js-errors.ipynb _notebooks/2023-08-29-basics-of-js.ipynb _notebooks/2023-08-29-quiz.ipynb _notebooks/2023-08-30-basics-js-data-types.ipynb _notebooks/2023-09-06-titanic.ipynb _notebooks/2023-09-07-to-do-list.ipynb _notebooks/2023-09-11-for-loops.ipynb _notebooks/2023-09-14-basics-js-data-types.ipynb _notebooks/2023-09-18-Voila_Restaurant.ipynb _notebooks/2023-09-20-programs.ipynb _notebooks/2023-09-26-flask.ipynb
+NOTEBOOK_FILES := _notebooks/2023-08-29-quiz.ipynb _notebooks/2023-08-30-basics-js-data-types.ipynb _notebooks/2023-09-06-titanic.ipynb _notebooks/2023-09-07-to-do-list.ipynb _notebooks/2023-09-11-for-loops.ipynb _notebooks/2023-09-14-basics-js-data-types.ipynb _notebooks/2023-09-18-Voila_Restaurant.ipynb _notebooks/2023-09-20-programs.ipynb _notebooks/2023-09-26-basics-html.ipynb _notebooks/2023-09-26-basics-js-errors.ipynb _notebooks/2023-09-26-basics-of-js.ipynb _notebooks/2023-09-26-flask.ipynb _notebooks/2023-09-27-basics-home.ipynb _notebooks/2023-10-04-data-abstraction.ipynb _notebooks/2023-10-05-algorithms.ipynb
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # automatic
@@ -43,7 +47,7 @@ INFOPATH = /opt/homebrew/share/info:
 # environment
 VSCODE_CWD = /
 # environment
-PATH = /Users/Akhil/gems/bin:/Users/Akhil/gems/bin:/Users/Akhil/gems/bin:/Users/Akhil/gems/bin:/Users/Akhil/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
+PATH = /Users/Akhil/gems/bin:/Users/Akhil/gems/bin:/Users/Akhil/gems/bin:/Users/Akhil/gems/bin:/Users/Akhil/gems/bin:/Users/Akhil/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin
 # makefile (from `Makefile', line 4)
 LOG_FILE = /tmp/jekyll$(PORT).log
 # makefile (from `Makefile', line 3)
@@ -57,11 +61,11 @@ PORT = 4200
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.qWyrcJ7IKG/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.okVvZjITXC/Listeners
 # automatic
 %F = $(notdir $%)
 # makefile (from `Makefile', line 17)
-MARKDOWN_FILES := _posts/2023-08-28-basics-home_IPYNB_2_.md _posts/2023-08-28-basics-html_IPYNB_2_.md _posts/2023-08-28-basics-js-errors_IPYNB_2_.md _posts/2023-08-29-basics-of-js_IPYNB_2_.md _posts/2023-08-29-quiz_IPYNB_2_.md _posts/2023-08-30-basics-js-data-types_IPYNB_2_.md _posts/2023-09-06-titanic_IPYNB_2_.md _posts/2023-09-07-to-do-list_IPYNB_2_.md _posts/2023-09-11-for-loops_IPYNB_2_.md _posts/2023-09-14-basics-js-data-types_IPYNB_2_.md _posts/2023-09-18-Voila_Restaurant_IPYNB_2_.md _posts/2023-09-20-programs_IPYNB_2_.md _posts/2023-09-26-flask_IPYNB_2_.md
+MARKDOWN_FILES := _posts/2023-08-29-quiz_IPYNB_2_.md _posts/2023-08-30-basics-js-data-types_IPYNB_2_.md _posts/2023-09-06-titanic_IPYNB_2_.md _posts/2023-09-07-to-do-list_IPYNB_2_.md _posts/2023-09-11-for-loops_IPYNB_2_.md _posts/2023-09-14-basics-js-data-types_IPYNB_2_.md _posts/2023-09-18-Voila_Restaurant_IPYNB_2_.md _posts/2023-09-20-programs_IPYNB_2_.md _posts/2023-09-26-basics-html_IPYNB_2_.md _posts/2023-09-26-basics-js-errors_IPYNB_2_.md _posts/2023-09-26-basics-of-js_IPYNB_2_.md _posts/2023-09-26-flask_IPYNB_2_.md _posts/2023-09-27-basics-home_IPYNB_2_.md _posts/2023-10-04-data-abstraction_IPYNB_2_.md _posts/2023-10-05-algorithms_IPYNB_2_.md
 # environment
 PWD = /Users/Akhil/vscode/student_original
 # environment
@@ -98,6 +102,7 @@ MAKECMDGOALS := all
 SHLVL = 1
 # default
 MAKE_VERSION := 3.81
+ 
 # environment
 USER = Akhil
 # makefile
@@ -128,6 +133,8 @@ XPC_SERVICE_NAME = application.com.microsoft.VSCode.6918505.6918511
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
+# environment
+VSCODE_L10N_BUNDLE_LOCATION = 
 # automatic
 +F = $(notdir $+)
 # environment
@@ -155,9 +162,9 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 870
+VSCODE_PID = 2424
 # variable set hash-table stats:
-# Load=73/1024=7%, Rehash=0, Collisions=10/104=10%
+# Load=74/1024=7%, Rehash=0, Collisions=10/105=10%
 
 # Pattern-specific Variable Values
 
@@ -165,10 +172,10 @@ VSCODE_PID = 870
 
 # Directories
 
-# . (device 16777231, inode 6574512): 23 files, no impossibilities.
-# _notebooks (device 16777231, inode 6574612): 19 files, no impossibilities.
+# . (device 16777231, inode 6574512): 25 files, no impossibilities.
+# _notebooks (device 16777231, inode 6574612): 21 files, no impossibilities.
 
-# 42 files, no impossibilities in 2 directories.
+# 46 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -205,6 +212,12 @@ stop:
 	
 
 # Not a target:
+_posts/2023-10-04-data-abstraction_IPYNB_2_.md:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
 all:
 #  Command-line target.
 #  Implicit rule search has been done.
@@ -212,12 +225,6 @@ all:
 #  File has not been updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-
-# Not a target:
-_posts/2023-08-28-basics-home_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
 
 .PHONY: default server convert clean stop
 #  Implicit rule search has not been done.
@@ -239,14 +246,11 @@ _posts/2023-09-14-basics-js-data-types_IPYNB_2_.md:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2023-09-14 14:47:53
+#  Last modified 2023-09-28 22:51:28
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-
- 
-make: *** No rule to make target `all'.  Stop.
 
 server: stop convert
 #  Phony target (prerequisite of .PHONY).
@@ -260,12 +264,6 @@ server: stop convert
 	echo "Server PID: $$PID"
 	@@until [ -f $(LOG_FILE) ]; do sleep 1; done
 	
-
-# Not a target:
-_posts/2023-08-28-basics-html_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
 
 default: server
 #  Phony target (prerequisite of .PHONY).
@@ -303,6 +301,12 @@ default: server
 	@# outputs startup log, removes last line ($$d) as ctl-c message is not applicable for background process
 	@sed '$$d' $(LOG_FILE)
 	
+
+# Not a target:
+_posts/2023-09-26-basics-js-errors_IPYNB_2_.md:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 .DEFAULT:
@@ -346,7 +350,7 @@ clean: stop
 	
 
 # Not a target:
-_posts/2023-08-29-basics-of-js_IPYNB_2_.md:
+_posts/2023-10-05-algorithms_IPYNB_2_.md:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -357,7 +361,13 @@ _posts/2023-08-30-basics-js-data-types_IPYNB_2_.md:
 #  Modification time never checked.
 #  File has not been updated.
 
-convert: _posts/2023-08-28-basics-home_IPYNB_2_.md _posts/2023-08-28-basics-html_IPYNB_2_.md _posts/2023-08-28-basics-js-errors_IPYNB_2_.md _posts/2023-08-29-basics-of-js_IPYNB_2_.md _posts/2023-08-29-quiz_IPYNB_2_.md _posts/2023-08-30-basics-js-data-types_IPYNB_2_.md _posts/2023-09-06-titanic_IPYNB_2_.md _posts/2023-09-07-to-do-list_IPYNB_2_.md _posts/2023-09-11-for-loops_IPYNB_2_.md _posts/2023-09-14-basics-js-data-types_IPYNB_2_.md _posts/2023-09-18-Voila_Restaurant_IPYNB_2_.md _posts/2023-09-20-programs_IPYNB_2_.md _posts/2023-09-26-flask_IPYNB_2_.md
+# Not a target:
+_posts/2023-09-26-basics-of-js_IPYNB_2_.md:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+convert: _posts/2023-08-29-quiz_IPYNB_2_.md _posts/2023-08-30-basics-js-data-types_IPYNB_2_.md _posts/2023-09-06-titanic_IPYNB_2_.md _posts/2023-09-07-to-do-list_IPYNB_2_.md _posts/2023-09-11-for-loops_IPYNB_2_.md _posts/2023-09-14-basics-js-data-types_IPYNB_2_.md _posts/2023-09-18-Voila_Restaurant_IPYNB_2_.md _posts/2023-09-20-programs_IPYNB_2_.md _posts/2023-09-26-basics-html_IPYNB_2_.md _posts/2023-09-26-basics-js-errors_IPYNB_2_.md _posts/2023-09-26-basics-of-js_IPYNB_2_.md _posts/2023-09-26-flask_IPYNB_2_.md _posts/2023-09-27-basics-home_IPYNB_2_.md _posts/2023-10-04-data-abstraction_IPYNB_2_.md _posts/2023-10-05-algorithms_IPYNB_2_.md
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -365,14 +375,21 @@ convert: _posts/2023-08-28-basics-home_IPYNB_2_.md _posts/2023-08-28-basics-html
 #  commands to execute (from `Makefile', line 67):
 	
 
+ 
 # Not a target:
-_posts/2023-08-28-basics-js-errors_IPYNB_2_.md:
+_posts/2023-08-29-quiz_IPYNB_2_.md:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
-_posts/2023-08-29-quiz_IPYNB_2_.md:
+_posts/2023-09-27-basics-home_IPYNB_2_.md:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+_posts/2023-09-26-basics-html_IPYNB_2_.md:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -384,7 +401,7 @@ _posts/2023-09-11-for-loops_IPYNB_2_.md:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=23/1024=2%, Rehash=0, Collisions=0/57=0%
+# Load=25/1024=2%, Rehash=0, Collisions=0/61=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -396,6 +413,6 @@ _posts/2023-09-11-for-loops_IPYNB_2_.md:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Sep 27 22:44:09 2023
+# Finished Make data base on Mon Oct  9 22:27:05 2023
 
  
