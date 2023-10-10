@@ -10,7 +10,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `all'.  Stop.
 
 
-# Make data base, printed on Mon Oct  9 22:27:05 2023
+# Make data base, printed on Mon Oct  9 22:43:04 2023
 
 # Variables
 
@@ -102,7 +102,6 @@ MAKECMDGOALS := all
 SHLVL = 1
 # default
 MAKE_VERSION := 3.81
- 
 # environment
 USER = Akhil
 # makefile
@@ -193,6 +192,7 @@ _posts/%_IPYNB_2_.md: _notebooks/%.ipynb
 _posts/2023-09-06-titanic_IPYNB_2_.md:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
+ 
 #  File has not been updated.
 
 stop:
@@ -375,7 +375,6 @@ convert: _posts/2023-08-29-quiz_IPYNB_2_.md _posts/2023-08-30-basics-js-data-typ
 #  commands to execute (from `Makefile', line 67):
 	
 
- 
 # Not a target:
 _posts/2023-08-29-quiz_IPYNB_2_.md:
 #  Implicit rule search has not been done.
@@ -413,6 +412,6 @@ _posts/2023-09-11-for-loops_IPYNB_2_.md:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Mon Oct  9 22:27:05 2023
+# Finished Make data base on Mon Oct  9 22:43:04 2023
 
  

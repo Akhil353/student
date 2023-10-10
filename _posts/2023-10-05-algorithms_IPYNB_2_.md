@@ -2,6 +2,7 @@
 toc: false
 comments: true
 layout: post
+title: _
 type: plans
 courses: { timebox: {week: 7} }
 ---
