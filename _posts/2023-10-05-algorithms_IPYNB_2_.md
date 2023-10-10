@@ -3,7 +3,7 @@ toc: false
 comments: true
 layout: post
 type: plans
-courses: { compsci: {week: 7} }
+courses: { timebox: {week: 7} }
 ---
 
 
@@ -124,7 +124,7 @@ print(sub)
 
 fibonacci = []
 #Create the fibonacci list
-user = int(input("Enter how many numbers of the fibonacci sequence you want: "
+user = int(input("Enter how many numbers of the fibonacci sequence you want: "))
 def fibonacci_iter(num):
     for index in range(0, user + 1):
         if index == 0:
@@ -138,9 +138,12 @@ def fibonacci_iter(num):
     for num in fibonacci:
         if num < user_input:
             print(num)
+
+#Use a mathematical formula to get the final fibonacci number of the user input
 def get_fibonacci(user):
     print(f"The final number of the fibonacci sequence is: {(1.618^user - (1-1.618) ^ user) / 5**1/2}")
 
+#Use an recursional function to get the fibonacci number desired
 def fibonacci_recursive(num):
     if num <= 0:
         return 0
@@ -150,7 +153,7 @@ def fibonacci_recursive(num):
         return fibonacci_recursive(num - 1) + fibonacci_recursive(num - 2)
 
 
-    
+#Print all 3 different ways to get the desired num from the fibonacci sequence
 fibonacci_iter(user)
 get_fibonacci(user)
 fibonacci_recursive(user)
@@ -167,7 +170,7 @@ fibonacci_recursive(user)
 #13
 #21
 
-#The final number of the fibonacci sequence is around 34
+#The final number of the fibonacci sequence is around 55
 
 #55
 ```
