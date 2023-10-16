@@ -110,22 +110,17 @@ isOnTime = {'Student 1': 1, 'Student 2': 0, 'Student 3': 0, 'Student 4': 1, 'Stu
 #Code for Bob
 values_complete = list(isComplete.values())
 values_time = list(isOnTime.values())
-student = {}
+students = {'Student 1': '', 'Student 2': '', 'Student 3': '', 'Student 4': '', 'Student 5': '', 'Student 6': ''}
 
-def xor(a, b):
-    return a ^ b
-def nor(a, b):
-    return (not a and not b)
-for i in range(len(list(isComplete.values()))):
-    if xor(values_complete[i], values_time[i]):
-        student[f'Student {str(i + 1)}'] = 'Incomplete'
-    elif nor(values_complete[i], values_time[i]):
-        student[f'Student {str(i + 1)}'] = 'Incomplete'
-    else:
-        student[f'Student {str(i + 1)}'] = 'Complete'
+for student in range(len(values_complete)):
+    if values_complete[student] and values_time[student]:
+        students[student] = 'Complete'
+    elif not(values_complete[student] and values_time[student]):
+        students[student] = 'Incomplete'
 
-for stu in student:
-    print(f"{stu}: {student[stu]}")
+
+for stu in students:
+    print(f"{stu}: {students[stu]}")
     print('\n')
 
 #Interactive code that uses logic gates
@@ -163,7 +158,7 @@ def ready_for_school():
         print("You'll be late to school today")
 
 ready_for_school()
-    
+#BOB Code
 #Student 1: Complete
 
 
@@ -181,5 +176,6 @@ ready_for_school()
 
 #Student 6: Complete
 
+#Problem 1 Output
 #You'll get to school on time
 ```
