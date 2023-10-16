@@ -1,7 +1,7 @@
 ---
 toc: false
 comments: true
-layout: post
+layout: default
 title: _
 type: hacks
 courses: { timebox: {week: 7} }
