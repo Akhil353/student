@@ -3,7 +3,7 @@ toc: false
 comments: true
 layout: post
 title: Boolean HW
-type: plans
+type: hacks
 courses: { timebox: {week: 8} }
 ---
 

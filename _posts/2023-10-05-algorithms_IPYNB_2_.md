@@ -3,7 +3,7 @@ toc: false
 comments: true
 layout: post
 title: _
-type: plans
+type: hacks
 courses: { timebox: {week: 7} }
 ---
 
