@@ -2,7 +2,7 @@
 toc: true
 comments: true
 layout: default
-title: Week 9 Review
+title: Week 8 Review
 type: tangibles
 courses: { timebox: {week: 8} }
 ---
