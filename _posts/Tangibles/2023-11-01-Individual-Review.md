@@ -210,3 +210,39 @@ Code to make the tumbleweed roll below:
                     }
                 }
 ```
+
+# Student Teaching
+
+## What I learned
+- Data Abstraction
+  - Variables: Key Words used to assign values to a certain key
+  - Types of Variables: String, Integer, Float, Boolean, Array (Use type() function to get the type of a variable)
+  - Mathematical Functions: Can be used for integers, floats, strings, and sometimes arrays too!
+  - Variables can be used to define other variables
+  - Lists can have multiple positions, each seperated by a ','
+  - Use square brackets to get an index (Index starts at 0)
+  - Classes
+    - Classes are essentially a group of functions that are callable
+- Algorithms
+  - Algorithms are a way to perform a set of instructions to achieve a task
+  - For loop
+    - Iterates through every item in a range
+    - Ex: for item in list:
+  - If statement
+    - Used to perform algorithms based off conditions
+- Boolean/If
+  - Boolean can have 2 values: True or False
+  - Logic gates use binary to give a boolean value (Ex: and(0,0) = True)
+  - There are many different types of logic gates:
+    - And gate
+    - Or gate
+    - Not gate
+    - Xor gate
+    - Nand gate
+    - Nor gate
+- Iteration
+  - A way to iterate through ranges and items
+  - For loop
+    - Goes through every item in a range
+  - While loop
+    - Goes through a block of code until a certain condition is met
