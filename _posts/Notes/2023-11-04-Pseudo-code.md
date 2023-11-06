@@ -14,6 +14,20 @@ courses: { timebox: {week: 10} }
   - Security
   - Storing data in bits
 
+## What I searched up/ChatGPT'd
+- What is the internet engineering task force?
+  - Standards organization for the standards of internet protocols
+  - "Make the internet work better"
+- What is an IP?
+  - A numerical label that uses the internet protocol for communication
+- What is the DMCA?
+  - A law that prevents theft of copyright online
+- What is metadata?
+  - "Data that provides information about other data"
+- What is Cloud Computing?
+  - The availability of online resources without active management by the user
+  - Ex: Databases
+
 ## Questions I got wrong
 - Choose the pseudo code that correctly gets you to the end goal
   - I got this question wrong because I read the pseudo code wrong, causing the resulting output of my choice to be wrong. 

@@ -6,6 +6,19 @@ title: Individual Review
 type: tangibles
 courses: { timebox: {week: 11} }
 ---
+# Trimester Reflection
+## Memories
+- Me finding a partner to work with for this trimester (Srijan)
+- Learning to work with friends to understand/accomplish tasks
+- Coming up with the idea to make our passion project about breaking bad
+- Creating funny Canva documents [Image](/images/agile_manifesto.png)
+## What I learned
+- How to collaborate on code w/ others
+- How to use ChatGPT
+- How to debug code 
+- Python/JS/HTML/Markdown syntax
+## Goals for the future
+In the next 2 trimesters, I want to learn how to use API's more. I'm also interested in how API's work, and if I can make my own API. Some ways I can grow personally is to learn more about pseudo code and syntax for JS. 
 
 # Project Recap
 
@@ -184,8 +197,8 @@ Styling code for the table below:
     }
 ```
 
-## Moving Background Page
-Contains a still image in the background with a tumbleweed rolling across the screen to replicate the breaking bad desert. Uses OOP to create the tumbleweed rolling, and uses the page screen ratio for dimensions.
+## Breaking Bad Desert Page
+Contains a still image in the background with a tumbleweed rolling across the screen to replicate the breaking bad desert. Uses OOP to create the tumbleweed rolling, and uses the page screen ratio for dimensions. 
 Code to make the tumbleweed roll below:
 ```py
         const characterImg = new Image();
@@ -210,5 +223,122 @@ Code to make the tumbleweed roll below:
                     }
                 }
 ```
+This page also has 2 different characters from breaking bad: Walter White and Jesse Pinkman. Jesse Pinkman is a still character in the page, and Walter is a moveable character (uses a/d). When the two characters touch each others, a dialogue bubble pops up between the two characters.
+Code for movement:
+```py
+function updateCharacter() {
+  character.x += character.speed; // Move character horizontally
+  character.rotation += character.rotationSpeed; // Rotate character
+  // Wrap character to the other side of the canvas when it goes off-screen
+  if (character.x > canvas.width + character.width / 2) {
+    character.x = -character.width / 2;
+    }
+  }
+  function drawPlayer() {
+  ctx.drawImage(playerImg, player.x - player.width / 2, player.y - player.height / 2, player.width, player.height); // Draw player
+  }
+  function updatePlayer() {
+  // Move player horizontally based on input (a and d keys)
+    if (keys['a']) {
+    layer.x -= player.speed;
+                        }
+    if (keys['d']) {
+      player.x += player.speed;
+                        }
+    // Wrap player to the other side of the canvas when it goes off-screen
+    if (player.x > canvas.width + player.width / 2) {
+      player.x = -player.width / 2;
+      }     
+    }
+```
+And here is the code for the dialogue:
+```py
+function checkCollision() {
+    // Calculate the distance between player and interactive
+    const distance = Math.sqrt((player.x - interactive.x) ** 2 + (player.y - interactive.y) ** 2);
+    if (distance < player.width / 2 + interactive.width / 2) {
+        // If they touch, set the dialogue to be visible
+        dialogueVisible = true;
+    } else {
+        // If they are not touching, hide the dialogue
+        dialogueVisible = false;
+    }
+}
 
-# Student Teaching
+function drawDialogue() {
+    if (dialogueVisible) {
+        // Display a dialogue bubble when dialogue is visible
+        const interactiveX = interactive.x;
+        const interactiveY = interactive.y - interactive.height / 2 - 60; // Adjusted the vertical position
+        ctx.fillStyle = 'white';
+        ctx.fillRect(interactiveX, interactiveY, interactive.width, 60); // Adjusted the height of the white box
+        ctx.fillStyle = 'black';
+        ctx.fillText('This stuff is the bomb, Mr. White!', interactiveX + 10, interactiveY + 40); // Adjusted the vertical position
+    }
+}
+```
+
+
+## 404 Page
+Users will get a 404 error when they try to access a page that doesn't exist. Instead of giving them a github error, I made a page that it would send users to when they tried to access an unknown location. This also uses the code to rotate the character from my moving background page
+```py
+## 404 Error
+
+Nothing to look at here!
+{% assign characterImage = site.baseurl | append: page.character %}
+<html>
+<head>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <script>
+        const canvas = document.getElementById("gameCanvas");
+        const ctx = canvas.getContext("2d");
+        // Get window width and height
+        canvas.width = window.outerWidth;
+        canvas.height = window.outerHeight - 200;
+        // Character (tumbleweed)
+        const character = {
+            x: 50,
+            y: canvas.height - 200,
+            width: 100,
+            height: 100,
+            speed: 2, // Speed of movement
+            rotation: 0, // Initial rotation angle in radians
+            rotationSpeed: (Math.PI / 180) * 2, // Rotation speed in radians per frame (adjust the value for desired speed)
+        };
+        const characterImg = new Image();
+        characterImg.src = '{{characterImage}}'; // Load the character image
+        characterImg.onload = function () {
+            function drawCharacter() {
+                ctx.save(); // Save the current canvas state
+                ctx.translate(character.x + character.width / 2, character.y + character.height / 2); // Translate to character's center
+                ctx.rotate(character.rotation); // Rotate
+                ctx.drawImage(characterImg, -character.width / 2, -character.height / 2, character.width, character.height); // Draw character
+                ctx.restore(); // Restore the canvas state
+            }
+            function updateCharacter() {
+                character.x += character.speed; // Move character horizontally
+                character.rotation += character.rotationSpeed; // Rotate character
+                // Wrap character to the other side of the canvas when it goes off-screen
+                if (character.x > canvas.width) {
+                    character.x = -character.width;
+                }
+            }
+            function gameLoop() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
+                drawCharacter();
+                updateCharacter();
+                requestAnimationFrame(gameLoop); // Call the loop again
+            }
+            gameLoop(); // Start the game loop
+        };
+    </script>
+</body>
+</html>
+```
