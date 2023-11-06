@@ -12,7 +12,7 @@ courses: { timebox: {week: 11} }
 - Learning to work with friends to understand/accomplish tasks
 - Coming up with the idea to make our passion project about breaking bad
 - Creating funny Canva documents: 
-- ![Canva Image](/images/agile_manifesto.png)
+- ![Canva Image](/student/images/agile_manifesto.png)
 &nbsp;
 ## What I learned
 - How to collaborate on code w/ others
