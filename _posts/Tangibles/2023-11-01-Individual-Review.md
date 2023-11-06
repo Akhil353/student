@@ -4,13 +4,13 @@ comments: true
 layout: default
 title: Individual Review
 type: tangibles
-courses: { timebox: {week: 9} }
+courses: { timebox: {week: 11} }
 ---
 
 # Project Recap
 
 ## Issues Review
-<a href="https://github.com/APCSP-RAGS/pp-frontend/issues/1">Issue Week 1</a>
+### <a href="https://github.com/APCSP-RAGS/pp-frontend/issues/1">Issue Week 1</a>
 In this first week, I designed the frontend to look like the blueprint: <a href = "https://www.canva.com/design/DAFwy_4sba8/hiUKhROCfCaWV4VkUUk_jw/edit">See Canva blueprint here.</a> We got the two pages for music generation/recommendation up. The main challenge was getting the input box to work, as that had a lot of bugs to it. Here is the input box code below:
 ```py
 <label for="genreInput" class="green-text">Favorite Songs:</label>
@@ -33,7 +33,7 @@ In this first week, I designed the frontend to look like the blueprint: <a href 
             <button onclick="saveInput('artistsInput', 'artistsOutput')"><a>Save Input</a></button>
 ```
 
-<a href="https://github.com/APCSP-RAGS/pp-frontend/issues/3">Issue Week 2</a>
+### <a href="https://github.com/APCSP-RAGS/pp-frontend/issues/3">Issue Week 2</a>
 In the second week, we got the data table working for the jokes and songs API. I ran into a lot of problem, the main problem being the file format. I also updated the frontend design to include the alien world page. Here is the layer class that moves the background image:
 
 ```py
@@ -58,7 +58,7 @@ export class Layer {
 }
 ```
 
-<a href="https://github.com/APCSP-RAGS/pp-frontend/issues/5">Issue Week 3</a>
+### <a href="https://github.com/APCSP-RAGS/pp-frontend/issues/5">Issue Week 3</a>
 In the 3rd week, I made major changes to the page with the moving character. I fixed many problems with the page with the moving character because of how the code was built. To fix this, I had to remake the code so that the character would rotate and not go through frames like a sprite. Here is the code to rotate and move the sprite:
 
 ```py
@@ -212,27 +212,3 @@ Code to make the tumbleweed roll below:
 ```
 
 # Student Teaching
-
-- Algorithms
-  - Algorithms are a way to perform a set of instructions to achieve a task
-  - For loop
-    - Iterates through every item in a range
-    - Ex: for item in list:
-  - If statement
-    - Used to perform algorithms based off conditions
-- Boolean/If
-  - Boolean can have 2 values: True or False
-  - Logic gates use binary to give a boolean value (Ex: and(0,0) = True)
-  - There are many different types of logic gates:
-    - And gate
-    - Or gate
-    - Not gate
-    - Xor gate
-    - Nand gate
-    - Nor gate
-- Iteration
-  - A way to iterate through ranges and items
-  - For loop
-    - Goes through every item in a range
-  - While loop
-    - Goes through a block of code until a certain condition is met
