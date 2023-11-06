@@ -11,12 +11,16 @@ courses: { timebox: {week: 11} }
 - Me finding a partner to work with for this trimester (Srijan)
 - Learning to work with friends to understand/accomplish tasks
 - Coming up with the idea to make our passion project about breaking bad
-- Creating funny Canva documents [Image](/images/agile_manifesto.png)
+- Creating funny Canva documents: 
+- ![Canva Image](/images/agile_manifesto.png)
+&nbsp;
 ## What I learned
 - How to collaborate on code w/ others
 - How to use ChatGPT
 - How to debug code 
 - Python/JS/HTML/Markdown syntax
+
+&nbsp;
 ## Goals for the future
 In the next 2 trimesters, I want to learn how to use API's more. I'm also interested in how API's work, and if I can make my own API. Some ways I can grow personally is to learn more about pseudo code and syntax for JS. 
 
