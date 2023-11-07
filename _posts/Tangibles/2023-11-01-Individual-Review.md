@@ -22,7 +22,7 @@ courses: { timebox: {week: 11} }
 
 &nbsp;
 ## Goals for the future
-In the next 2 trimesters, I want to learn how to use API's more. I'm also interested in how API's work, and if I can make my own API. Some ways I can grow personally is to learn more about pseudo code and syntax for JS. 
+In the next 2 trimesters, I want to learn how to use API's more. I'm also interested in how API's work, and if I can make my own API. Some ways I can grow personally is to learn more about pseudo code and syntax for JS. In terms of pushing code, I also want to get into the habit of pushing changes slowly instead of pushing all the code at the same time. By splitting up the commits more, I can debug more efficiently and I can also keep others up-to-date on where I am.
 
 # Project Recap
 
@@ -101,7 +101,7 @@ function drawCharacter() {
 ```
 
 ## Projects Page
-Contains 2 main images: The music recommender and the moving background page.
+Contains 2 main images: The music recommender and the breaking bad desert page.
 
 ## Recommender Page
 Contains an integrated table of data of songs breaking bad characters would like. The table also has a button to see the lyrics of the songs and has a cool RGB look for ambience.
