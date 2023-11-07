@@ -33,7 +33,7 @@ courses: { timebox: {week: 10} }
 - Choose the pseudo code that correctly gets you to the end goal
   - I got this question wrong because I read the pseudo code wrong, causing the resulting output of my choice to be wrong. 
 - Given psuedo code, see how long it will take to run
-   - Because I only focused on the code that was being repeated, I failed to look at the code outside the loop, causing me to get the incorrect answer.
+  - Because I only focused on the code that was being repeated, I failed to look at the code outside the loop, causing me to get the incorrect answer.
 - See how the count of prey changes over time
   - Because I didn't read the question carefully, I missed the fact that a certain function didn't change the amount of predators over time. This caused me to get the answer wrong.
 - See what the safest option is to sample music
