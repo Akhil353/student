@@ -6,7 +6,7 @@ title: Individual Review
 type: tangibles
 courses: { timebox: {week: 11} }
 ---
-# Trimester Reflection
+# Trimester 1 Reflection
 ## Memories
 - Me finding a partner to work with for this trimester (Srijan)
 - Learning to work with friends to understand/accomplish tasks
