@@ -23,7 +23,6 @@ courses: {'timebox': {'week': 17}}
             justify-content: center;
             height: 100vh;
         }
-
         .login-container {
             background-color: #fff;
             border-radius: 8px;
@@ -32,24 +31,20 @@ courses: {'timebox': {'week': 17}}
             width: 300px;
             text-align: center;
         }
-
         h1 {
             color: #333;
         }
-
         label {
             display: block;
             margin: 10px 0;
             color: #555;
         }
-
         input {
             width: 100%;
             padding: 8px;
             margin: 5px 0 15px;
             box-sizing: border-box;
         }
-
         button {
             background-color: #4caf50;
             color: white;
@@ -66,12 +61,40 @@ courses: {'timebox': {'week': 17}}
         <form>
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
-
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
-
-            <button type="submit">Login</button>
+            <button type="submit" onclick="login()">Login</button>
         </form>
     </div>
+    <script>
+        function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            // Example data to send to the backend (adjust according to your backend requirements)
+            const data = {
+                username: username,
+                password: password
+            };
+            // Fetch API to send data to the backend
+            fetch('add backend link here';, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    // Add any additional headers if required
+                },
+                body: JSON.stringify(data),
+            })
+            .then(response => response.json())
+            .then(responseData => {
+                // Handle the response from the backend
+                console.log(responseData);
+                // You can implement further actions based on the backend response
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                // Handle errors, such as network issues or backend errors
+            });
+        }
+    </script>
 </body>
 </html>
