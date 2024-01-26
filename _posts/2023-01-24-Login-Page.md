@@ -15,7 +15,7 @@ courses: {'timebox': {'week': 17}}
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #292b2f;
             margin: 0;
             padding: 0;
             display: flex;
@@ -24,7 +24,7 @@ courses: {'timebox': {'week': 17}}
             height: 100vh;
         }
         .login-container {
-            background-color: #fff;
+            background-color: #292b2f;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
@@ -68,11 +68,11 @@ courses: {'timebox': {'week': 17}}
     </div>
     <script>
         function login() {
-            const username = document.getElementById('username').value;
+            const uid = document.getElementById('username').value;
             const password = document.getElementById('password').value;
             // Example data to send to the backend (adjust according to your backend requirements)
             const data = {
-                username: username,
+                username: uid,
                 password: password
             };
             // Fetch API to send data to the backend
