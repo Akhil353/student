@@ -24,7 +24,7 @@ courses: {'timebox': {'week': 17}}
             height: 100vh;
         }
         .login-container {
-            background-color: #292b2f;
+            background-color: #575757;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
@@ -86,16 +86,14 @@ courses: {'timebox': {'week': 17}}
                 },
                 body: JSON.stringify(data),
             })
-            .then(response => response.json())
-            .then(responseData => {
-                // Handle the response from the backend
-                console.log(responseData);
-                // You can implement further actions based on the backend response
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                // Handle errors, such as network issues or backend errors
-            });
+            .then(response => {
+            if (!response.ok) {
+                const errorMsg = 'Login error: ' + response.status;
+                console.log(errorMsg);
+                return;
+            }
+            window.location.href = "{{site.baseurl}}/";
+        })
         }
     </script>
 </body>
