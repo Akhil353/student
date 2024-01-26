@@ -67,16 +67,18 @@ courses: {'timebox': {'week': 17}}
         </form>
     </div>
     <script>
+        import { url, options } from '{{site.baseurl}}/config.js';
         function login() {
             const uid = document.getElementById('username').value;
             const password = document.getElementById('password').value;
+            const url = url + '/api/users/authenticate'
             // Example data to send to the backend (adjust according to your backend requirements)
             const data = {
                 username: uid,
                 password: password
             };
             // Fetch API to send data to the backend
-            fetch('add backend link here';, {
+            fetch('url';, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
