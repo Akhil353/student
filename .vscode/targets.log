@@ -7,7 +7,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
 
-# Make data base, printed on Wed Jan 17 10:05:23 2024
+# Make data base, printed on Mon Feb  5 08:38:49 2024
 
 # Variables
 
@@ -22,7 +22,7 @@ VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # makefile (from `Makefile', line 13)
-NOTEBOOK_FILES := _notebooks/2023-08-29-quiz.ipynb _notebooks/2023-08-30-basics-js-data-types.ipynb _notebooks/2023-09-06-titanic.ipynb _notebooks/2023-09-07-to-do-list.ipynb _notebooks/2023-09-11-for-loops.ipynb _notebooks/2023-09-14-basics-js-data-types.ipynb _notebooks/2023-09-18-Voila_Restaurant.ipynb _notebooks/2023-09-20-programs.ipynb _notebooks/2023-09-26-basics-html.ipynb _notebooks/2023-09-26-basics-js-errors.ipynb _notebooks/2023-09-26-basics-of-js.ipynb _notebooks/2023-09-26-flask.ipynb _notebooks/2023-09-27-basics-home.ipynb _notebooks/2023-09-30-developingAlgorithmsTeach.ipynb _notebooks/2023-10-04-data-abstraction.ipynb _notebooks/2023-10-05-algorithms.ipynb _notebooks/2023-10-10-Boolean-If.ipynb _notebooks/2023-10-19-StudentTeachingLesson.ipynb _notebooks/2023-10-21-libraries.ipynb _notebooks/2023-10-24-developingProceduresP5.ipynb _notebooks/2023-10-27-Simulations-P5-ST.ipynb _notebooks/2023-11-16-Beneficial-and-Harmful-Effect.ipynb _notebooks/2023-11-16-teamteach.ipynb _notebooks/2023-11-27-internet.ipynb _notebooks/2023-11-29-Team_Teach.ipynb _notebooks/2023-11-30-StudentTeahing.ipynb _notebooks/2023-12-07-TeamTeach.ipynb _notebooks/2023-12-12-Computing-Bias.ipynb _notebooks/2023-12-21-Safe_Computing.ipynb
+NOTEBOOK_FILES := _notebooks/2023-08-29-quiz.ipynb _notebooks/2023-08-30-basics-js-data-types.ipynb _notebooks/2023-09-06-titanic.ipynb _notebooks/2023-09-07-to-do-list.ipynb _notebooks/2023-09-11-for-loops.ipynb _notebooks/2023-09-14-basics-js-data-types.ipynb _notebooks/2023-09-18-Voila_Restaurant.ipynb _notebooks/2023-09-20-programs.ipynb _notebooks/2023-09-26-basics-html.ipynb _notebooks/2023-09-26-basics-js-errors.ipynb _notebooks/2023-09-26-basics-of-js.ipynb _notebooks/2023-09-26-flask.ipynb _notebooks/2023-09-27-basics-home.ipynb _notebooks/2023-09-30-developingAlgorithmsTeach.ipynb _notebooks/2023-10-04-data-abstraction.ipynb _notebooks/2023-10-05-algorithms.ipynb _notebooks/2023-10-10-Boolean-If.ipynb _notebooks/2023-10-19-StudentTeachingLesson.ipynb _notebooks/2023-10-21-libraries.ipynb _notebooks/2023-10-24-developingProceduresP5.ipynb _notebooks/2023-10-27-Simulations-P5-ST.ipynb _notebooks/2023-11-16-Beneficial-and-Harmful-Effect.ipynb _notebooks/2023-11-16-teamteach.ipynb _notebooks/2023-11-27-internet.ipynb _notebooks/2023-11-29-Team_Teach.ipynb _notebooks/2023-11-30-StudentTeahing.ipynb _notebooks/2023-12-07-TeamTeach.ipynb _notebooks/2023-12-12-Computing-Bias.ipynb _notebooks/2023-12-21-Safe_Computing.ipynb _notebooks/2024-01-14-SASS_intro.ipynb _notebooks/2024-01-22-LOGIN-LESSON.ipynb _notebooks/2024-01-24-TeamTeach-FlaskApiMethodsAndModels.ipynb _notebooks/2024-01-30-flask-roles.ipynb _notebooks/2024-1-18-html-javascript-user-profile.ipynb
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # automatic
@@ -62,7 +62,7 @@ SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.okVvZjITXC/Listeners
 # automatic
 %F = $(notdir $%)
 # makefile (from `Makefile', line 17)
-MARKDOWN_FILES := _posts/2023-08-29-quiz_IPYNB_2_.md _posts/2023-08-30-basics-js-data-types_IPYNB_2_.md _posts/2023-09-06-titanic_IPYNB_2_.md _posts/2023-09-07-to-do-list_IPYNB_2_.md _posts/2023-09-11-for-loops_IPYNB_2_.md _posts/2023-09-14-basics-js-data-types_IPYNB_2_.md _posts/2023-09-18-Voila_Restaurant_IPYNB_2_.md _posts/2023-09-20-programs_IPYNB_2_.md _posts/2023-09-26-basics-html_IPYNB_2_.md _posts/2023-09-26-basics-js-errors_IPYNB_2_.md _posts/2023-09-26-basics-of-js_IPYNB_2_.md _posts/2023-09-26-flask_IPYNB_2_.md _posts/2023-09-27-basics-home_IPYNB_2_.md _posts/2023-09-30-developingAlgorithmsTeach_IPYNB_2_.md _posts/2023-10-04-data-abstraction_IPYNB_2_.md _posts/2023-10-05-algorithms_IPYNB_2_.md _posts/2023-10-10-Boolean-If_IPYNB_2_.md _posts/2023-10-19-StudentTeachingLesson_IPYNB_2_.md _posts/2023-10-21-libraries_IPYNB_2_.md _posts/2023-10-24-developingProceduresP5_IPYNB_2_.md _posts/2023-10-27-Simulations-P5-ST_IPYNB_2_.md _posts/2023-11-16-Beneficial-and-Harmful-Effect_IPYNB_2_.md _posts/2023-11-16-teamteach_IPYNB_2_.md _posts/2023-11-27-internet_IPYNB_2_.md _posts/2023-11-29-Team_Teach_IPYNB_2_.md _posts/2023-11-30-StudentTeahing_IPYNB_2_.md _posts/2023-12-07-TeamTeach_IPYNB_2_.md _posts/2023-12-12-Computing-Bias_IPYNB_2_.md _posts/2023-12-21-Safe_Computing_IPYNB_2_.md
+MARKDOWN_FILES := _posts/2023-08-29-quiz_IPYNB_2_.md _posts/2023-08-30-basics-js-data-types_IPYNB_2_.md _posts/2023-09-06-titanic_IPYNB_2_.md _posts/2023-09-07-to-do-list_IPYNB_2_.md _posts/2023-09-11-for-loops_IPYNB_2_.md _posts/2023-09-14-basics-js-data-types_IPYNB_2_.md _posts/2023-09-18-Voila_Restaurant_IPYNB_2_.md _posts/2023-09-20-programs_IPYNB_2_.md _posts/2023-09-26-basics-html_IPYNB_2_.md _posts/2023-09-26-basics-js-errors_IPYNB_2_.md _posts/2023-09-26-basics-of-js_IPYNB_2_.md _posts/2023-09-26-flask_IPYNB_2_.md _posts/2023-09-27-basics-home_IPYNB_2_.md _posts/2023-09-30-developingAlgorithmsTeach_IPYNB_2_.md _posts/2023-10-04-data-abstraction_IPYNB_2_.md _posts/2023-10-05-algorithms_IPYNB_2_.md _posts/2023-10-10-Boolean-If_IPYNB_2_.md _posts/2023-10-19-StudentTeachingLesson_IPYNB_2_.md _posts/2023-10-21-libraries_IPYNB_2_.md _posts/2023-10-24-developingProceduresP5_IPYNB_2_.md _posts/2023-10-27-Simulations-P5-ST_IPYNB_2_.md _posts/2023-11-16-Beneficial-and-Harmful-Effect_IPYNB_2_.md _posts/2023-11-16-teamteach_IPYNB_2_.md _posts/2023-11-27-internet_IPYNB_2_.md _posts/2023-11-29-Team_Teach_IPYNB_2_.md _posts/2023-11-30-StudentTeahing_IPYNB_2_.md _posts/2023-12-07-TeamTeach_IPYNB_2_.md _posts/2023-12-12-Computing-Bias_IPYNB_2_.md _posts/2023-12-21-Safe_Computing_IPYNB_2_.md _posts/2024-01-14-SASS_intro_IPYNB_2_.md _posts/2024-01-22-LOGIN-LESSON_IPYNB_2_.md _posts/2024-01-24-TeamTeach-FlaskApiMethodsAndModels_IPYNB_2_.md _posts/2024-01-30-flask-roles_IPYNB_2_.md _posts/2024-1-18-html-javascript-user-profile_IPYNB_2_.md
 # environment
 PWD = /Users/Akhil/vscode/student
 # environment
@@ -158,9 +158,9 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 43469
+VSCODE_PID = 36132
 # variable set hash-table stats:
-# Load=74/1024=7%, Rehash=0, Collisions=10/105=10%
+# Load=74/1024=7%, Rehash=0, Collisions=10/104=10%
 
 # Pattern-specific Variable Values
 
@@ -168,16 +168,19 @@ VSCODE_PID = 43469
 
 # Directories
 
-# . (device 16777231, inode 6574512): 25 files, no impossibilities.
-# _notebooks (device 16777231, inode 6574612): 36 files, no impossibilities.
+# . (device 16777231, inode 6574512): 27 files, no impossibilities.
+# _notebooks (device 16777231, inode 6574612): 41 files, no impossibilities.
 
-# 61 files, no impossibilities in 2 directories.
+# 68 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
 _posts/%_IPYNB_2_.md: _notebooks/%.ipynb
 #  commands to execute (from `Makefile', line 70):
 	@echo "Converting source $< to destination $@"
+ 
+make: *** No rule to make target `all'.  Stop.
+
 	@python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "$<"
 	
 
@@ -185,22 +188,7 @@ _posts/%_IPYNB_2_.md: _notebooks/%.ipynb
 
 # Files
 
-# Not a target:
-_posts/2023-09-06-titanic_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-_posts/2023-12-21-Safe_Computing_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
 stop:
- 
-make: *** No rule to make target `all'.  Stop.
-
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -217,12 +205,6 @@ make: *** No rule to make target `all'.  Stop.
 	
 
 # Not a target:
-_posts/2023-10-04-data-abstraction_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
 all:
 #  Command-line target.
 #  Implicit rule search has been done.
@@ -231,31 +213,7 @@ all:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-# Not a target:
-_posts/2023-10-27-Simulations-P5-ST_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
 .PHONY: default server convert clean stop
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-_posts/2023-10-19-StudentTeachingLesson_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-_posts/2023-09-14-basics-js-data-types_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-_posts/2023-11-29-Team_Teach_IPYNB_2_.md:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -269,7 +227,7 @@ _posts/2023-11-29-Team_Teach_IPYNB_2_.md:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2023-11-05 16:34:25
+#  Last modified 2024-01-31 10:09:30
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -282,41 +240,11 @@ server: stop convert
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 58):
 	@echo "Starting server..."
-	@@nohup bundle exec jekyll serve -H 0.0.0.0 -P $(PORT) > $(LOG_FILE) 2>&1 & \
+	@@nohup bundle exec jekyll serve -H 127.0.0.1 -P $(PORT) > $(LOG_FILE) 2>&1 & \
 	PID=$$!; \
 	echo "Server PID: $$PID"
 	@@until [ -f $(LOG_FILE) ]; do sleep 1; done
 	
-
-# Not a target:
-_posts/2023-11-27-internet_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-_posts/2023-10-21-libraries_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-_posts/2023-12-07-TeamTeach_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-_posts/2023-09-30-developingAlgorithmsTeach_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-_posts/2023-11-16-teamteach_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
 
 default: server
 #  Phony target (prerequisite of .PHONY).
@@ -328,7 +256,7 @@ default: server
 	@# tail and awk work together to extract Jekyll regeneration messages
 	@# When a _notebook is detected in the log, call make convert in the background
 	@# Note: We use the "if ($$0 ~ /_notebooks\/.*\.ipynb/) { system(\"make convert &\") }" to call make convert
-	@(tail -f $(LOG_FILE) | awk '/Server address: http:\/\/0.0.0.0:$(PORT)\/$(REPO_NAME)\// { serverReady=1 } \
+	@(tail -f $(LOG_FILE) | awk '/Server address: http:\/\/127.0.0.1:$(PORT)\/$(REPO_NAME)\// { serverReady=1 } \
 	serverReady && /^ *Regenerating:/ { regenerate=1 } \
 	regenerate { \
 	if (/^[[:blank:]]*$$/) { regenerate=0 } \
@@ -356,49 +284,7 @@ default: server
 	
 
 # Not a target:
-_posts/2023-09-26-basics-js-errors_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-_posts/2023-11-16-Beneficial-and-Harmful-Effect_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
 .DEFAULT:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-_posts/2023-09-18-Voila_Restaurant_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-_posts/2023-10-10-Boolean-If_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-_posts/2023-09-20-programs_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-_posts/2023-09-07-to-do-list_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-_posts/2023-09-26-flask_IPYNB_2_.md:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -414,77 +300,14 @@ clean: stop
 	@rm -rf _site
 	
 
-# Not a target:
-_posts/2023-11-30-StudentTeahing_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-_posts/2023-10-05-algorithms_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-_posts/2023-12-12-Computing-Bias_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-_posts/2023-08-30-basics-js-data-types_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-_posts/2023-10-24-developingProceduresP5_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-_posts/2023-09-26-basics-of-js_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
- 
-convert: _posts/2023-08-29-quiz_IPYNB_2_.md _posts/2023-08-30-basics-js-data-types_IPYNB_2_.md _posts/2023-09-06-titanic_IPYNB_2_.md _posts/2023-09-07-to-do-list_IPYNB_2_.md _posts/2023-09-11-for-loops_IPYNB_2_.md _posts/2023-09-14-basics-js-data-types_IPYNB_2_.md _posts/2023-09-18-Voila_Restaurant_IPYNB_2_.md _posts/2023-09-20-programs_IPYNB_2_.md _posts/2023-09-26-basics-html_IPYNB_2_.md _posts/2023-09-26-basics-js-errors_IPYNB_2_.md _posts/2023-09-26-basics-of-js_IPYNB_2_.md _posts/2023-09-26-flask_IPYNB_2_.md _posts/2023-09-27-basics-home_IPYNB_2_.md _posts/2023-09-30-developingAlgorithmsTeach_IPYNB_2_.md _posts/2023-10-04-data-abstraction_IPYNB_2_.md _posts/2023-10-05-algorithms_IPYNB_2_.md _posts/2023-10-10-Boolean-If_IPYNB_2_.md _posts/2023-10-19-StudentTeachingLesson_IPYNB_2_.md _posts/2023-10-21-libraries_IPYNB_2_.md _posts/2023-10-24-developingProceduresP5_IPYNB_2_.md _posts/2023-10-27-Simulations-P5-ST_IPYNB_2_.md _posts/2023-11-16-Beneficial-and-Harmful-Effect_IPYNB_2_.md _posts/2023-11-16-teamteach_IPYNB_2_.md _posts/2023-11-27-internet_IPYNB_2_.md _posts/2023-11-29-Team_Teach_IPYNB_2_.md _posts/2023-11-30-StudentTeahing_IPYNB_2_.md _posts/2023-12-07-TeamTeach_IPYNB_2_.md _posts/2023-12-12-Computing-Bias_IPYNB_2_.md _posts/2023-12-21-Safe_Computing_IPYNB_2_.md
+convert:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 67):
-	
-
-# Not a target:
-_posts/2023-08-29-quiz_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-_posts/2023-09-27-basics-home_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-_posts/2023-09-26-basics-html_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-_posts/2023-09-11-for-loops_IPYNB_2_.md:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
 
 # files hash-table stats:
-# Load=39/1024=4%, Rehash=0, Collisions=2/89=2%
+# Load=10/1024=1%, Rehash=0, Collisions=0/31=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -496,6 +319,6 @@ _posts/2023-09-11-for-loops_IPYNB_2_.md:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Jan 17 10:05:23 2024
+# Finished Make data base on Mon Feb  5 08:38:49 2024
 
  

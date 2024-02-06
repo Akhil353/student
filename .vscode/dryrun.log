@@ -5,73 +5,11 @@ echo "Stopping server..."
 lsof -ti :4200 | xargs kill >/dev/null 2>&1 || true
 echo "Stopping logging process..."
 # kills previously running logging processes
- 
 ps aux | awk -v log_file=/tmp/jekyll4200.log '$0 ~ "tail -f " log_file { print $2 }' | xargs kill >/dev/null 2>&1 || true
 # removes log
 rm -f /tmp/jekyll4200.log
-echo "Converting source _notebooks/2023-08-29-quiz.ipynb to destination _posts/2023-08-29-quiz_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-08-29-quiz.ipynb"
- 
-echo "Converting source _notebooks/2023-08-30-basics-js-data-types.ipynb to destination _posts/2023-08-30-basics-js-data-types_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-08-30-basics-js-data-types.ipynb"
-echo "Converting source _notebooks/2023-09-06-titanic.ipynb to destination _posts/2023-09-06-titanic_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-09-06-titanic.ipynb"
-echo "Converting source _notebooks/2023-09-07-to-do-list.ipynb to destination _posts/2023-09-07-to-do-list_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-09-07-to-do-list.ipynb"
-echo "Converting source _notebooks/2023-09-11-for-loops.ipynb to destination _posts/2023-09-11-for-loops_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-09-11-for-loops.ipynb"
-echo "Converting source _notebooks/2023-09-14-basics-js-data-types.ipynb to destination _posts/2023-09-14-basics-js-data-types_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-09-14-basics-js-data-types.ipynb"
-echo "Converting source _notebooks/2023-09-18-Voila_Restaurant.ipynb to destination _posts/2023-09-18-Voila_Restaurant_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-09-18-Voila_Restaurant.ipynb"
-echo "Converting source _notebooks/2023-09-20-programs.ipynb to destination _posts/2023-09-20-programs_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-09-20-programs.ipynb"
-echo "Converting source _notebooks/2023-09-26-basics-html.ipynb to destination _posts/2023-09-26-basics-html_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-09-26-basics-html.ipynb"
- 
-echo "Converting source _notebooks/2023-09-26-basics-js-errors.ipynb to destination _posts/2023-09-26-basics-js-errors_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-09-26-basics-js-errors.ipynb"
-echo "Converting source _notebooks/2023-09-26-basics-of-js.ipynb to destination _posts/2023-09-26-basics-of-js_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-09-26-basics-of-js.ipynb"
-echo "Converting source _notebooks/2023-09-26-flask.ipynb to destination _posts/2023-09-26-flask_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-09-26-flask.ipynb"
-echo "Converting source _notebooks/2023-09-27-basics-home.ipynb to destination _posts/2023-09-27-basics-home_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-09-27-basics-home.ipynb"
-echo "Converting source _notebooks/2023-09-30-developingAlgorithmsTeach.ipynb to destination _posts/2023-09-30-developingAlgorithmsTeach_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-09-30-developingAlgorithmsTeach.ipynb"
-echo "Converting source _notebooks/2023-10-04-data-abstraction.ipynb to destination _posts/2023-10-04-data-abstraction_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-10-04-data-abstraction.ipynb"
-echo "Converting source _notebooks/2023-10-05-algorithms.ipynb to destination _posts/2023-10-05-algorithms_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-10-05-algorithms.ipynb"
-echo "Converting source _notebooks/2023-10-10-Boolean-If.ipynb to destination _posts/2023-10-10-Boolean-If_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-10-10-Boolean-If.ipynb"
-echo "Converting source _notebooks/2023-10-19-StudentTeachingLesson.ipynb to destination _posts/2023-10-19-StudentTeachingLesson_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-10-19-StudentTeachingLesson.ipynb"
-echo "Converting source _notebooks/2023-10-21-libraries.ipynb to destination _posts/2023-10-21-libraries_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-10-21-libraries.ipynb"
- 
-echo "Converting source _notebooks/2023-10-24-developingProceduresP5.ipynb to destination _posts/2023-10-24-developingProceduresP5_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-10-24-developingProceduresP5.ipynb"
-echo "Converting source _notebooks/2023-10-27-Simulations-P5-ST.ipynb to destination _posts/2023-10-27-Simulations-P5-ST_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-10-27-Simulations-P5-ST.ipynb"
-echo "Converting source _notebooks/2023-11-16-Beneficial-and-Harmful-Effect.ipynb to destination _posts/2023-11-16-Beneficial-and-Harmful-Effect_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-11-16-Beneficial-and-Harmful-Effect.ipynb"
-echo "Converting source _notebooks/2023-11-16-teamteach.ipynb to destination _posts/2023-11-16-teamteach_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-11-16-teamteach.ipynb"
-echo "Converting source _notebooks/2023-11-27-internet.ipynb to destination _posts/2023-11-27-internet_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-11-27-internet.ipynb"
-echo "Converting source _notebooks/2023-11-29-Team_Teach.ipynb to destination _posts/2023-11-29-Team_Teach_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-11-29-Team_Teach.ipynb"
-echo "Converting source _notebooks/2023-11-30-StudentTeahing.ipynb to destination _posts/2023-11-30-StudentTeahing_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-11-30-StudentTeahing.ipynb"
-echo "Converting source _notebooks/2023-12-07-TeamTeach.ipynb to destination _posts/2023-12-07-TeamTeach_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-12-07-TeamTeach.ipynb"
-echo "Converting source _notebooks/2023-12-12-Computing-Bias.ipynb to destination _posts/2023-12-12-Computing-Bias_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-12-12-Computing-Bias.ipynb"
-echo "Converting source _notebooks/2023-12-21-Safe_Computing.ipynb to destination _posts/2023-12-21-Safe_Computing_IPYNB_2_.md"
-python3 -c 'import sys; from scripts.convert_notebooks import convert_single_notebook; convert_single_notebook(sys.argv[1])' "_notebooks/2023-12-21-Safe_Computing.ipynb"
 echo "Starting server..."
-nohup bundle exec jekyll serve -H 0.0.0.0 -P 4200 > /tmp/jekyll4200.log 2>&1 & \
+nohup bundle exec jekyll serve -H 127.0.0.1 -P 4200 > /tmp/jekyll4200.log 2>&1 & \
 		PID=$!; \
 		echo "Server PID: $PID"
 until [ -f /tmp/jekyll4200.log ]; do sleep 1; done
@@ -79,7 +17,7 @@ echo "Terminal logging starting, watching server..."
 # tail and awk work together to extract Jekyll regeneration messages
 # When a _notebook is detected in the log, call make convert in the background
 # Note: We use the "if ($0 ~ /_notebooks\/.*\.ipynb/) { system(\"make convert &\") }" to call make convert
-(tail -f /tmp/jekyll4200.log | awk '/Server address: http:\/\/0.0.0.0:4200\/student\// { serverReady=1 } \
+(tail -f /tmp/jekyll4200.log | awk '/Server address: http:\/\/127.0.0.1:4200\/student\// { serverReady=1 } \
 	serverReady && /^ *Regenerating:/ { regenerate=1 } \
 	regenerate { \
 		if (/^[[:blank:]]*$/) { regenerate=0 } \
