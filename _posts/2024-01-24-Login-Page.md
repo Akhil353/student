@@ -67,6 +67,7 @@ courses: {'timebox': {'week': 18}}
                 <button class='button'>Log in</button>
                 <div>
                     <span class="psw">Need an account? <a href="{{site.baseurl}}/2024/01/31/sign-up.html"> Sign Up</a></span>
+                    <span class="psw">Delete an account? <a href="{{site.baseurl}}/2024/02/07/delete.html"> Delete an account</a></span>
                 </div>
             </form>
         </div>
