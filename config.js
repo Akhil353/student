@@ -10,7 +10,7 @@ if (location.hostname === "localhost") {
 }
 
 export const options = {
-    method: ["GET", "POST", "PUT", "DELETE"], 
+    method: 'GET', 
     mode: 'cors', 
     cache: 'default',
     credentials: 'include',

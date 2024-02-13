@@ -6,7 +6,6 @@ title: Login Page
 type: hacks
 courses: {'timebox': {'week': 18}}
 ---
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -67,7 +66,7 @@ courses: {'timebox': {'week': 18}}
                 <button class='button'>Log in</button>
                 <div>
                     <span class="psw">Need an account? <a href="{{site.baseurl}}/2024/01/31/sign-up.html"> Sign Up</a></span>
-                    <span class="psw">Delete an account? <a href="{{site.baseurl}}/2024/02/07/delete.html"> Delete an account</a></span>
+                    <span class="psw2">Delete an account? <a href="{{site.baseurl}}/2024/02/07/delete.html"> Delete an account</a></span>
                 </div>
             </form>
         </div>
@@ -86,13 +85,21 @@ courses: {'timebox': {'week': 18}}
                 method: 'POST',
                 cache: 'no-cache',
                 headers: myHeaders,
-                body: JSON.stringify(body)
+                body: JSON.stringify(body),
+                credentials: 'include'
             };
+            let error_Msg = ''; // Declare error_Msg outside of any block
             fetch(url, authOptions)
             .then(response => {
+                if (response.status == 400) {
+                    error_Msg = 'This account does not exist.'; // Assign value to error_Msg
+                    alert(error_Msg); // Display error message
+                    return null;
+                }
                 if (!response.ok) {
-                    const errorMsg = 'Login error: ' + response.status;
-                    console.log(errorMsg);
+                    error_Msg = 'Login error: ' + response.status;
+                    alert(error_Msg); // Display error message
+                    console.log(error_Msg);
                     return null;
                 }
                 const contentType = response.headers.get('Content-Type');
@@ -105,11 +112,10 @@ courses: {'timebox': {'week': 18}}
             .then(data => {
                 if (data !== null) {
                     console.log('Response:', data);
+                    console.log(document.cookie);
+                    window.location.href = "{{site.baseurl}}/2024/02/12/table.html";
                 }
                 // window.location.href = "{{site.baseurl}}/";
-            })
-            .catch(err => {
-                console.error('Fetch error:', err);
             });
         }
         window.login_user = login_user;
