@@ -24,24 +24,7 @@ layout: default
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
 
-    {% if page.categories.size > 0 and site.show_tags %}
-      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
-      {% for category in  page.categories  %}
-        {%- assign prefix = category | slice: 0 -%}
-        {% if prefix == "C" %}
-          <a class="category-tags-link" href="{{site.baseurl}}/categories/cte#{{category|slugize}}">{{category}}</a>
-        {% else %}
-          <a class="category-tags-link" href="{{site.baseurl}}/categories/ap#{{category|slugize}}">{{category}}</a>
-        {% endif %}
-        {% unless forloop.last %}&nbsp;{% endunless %}
-      {% endfor %}
-      </p>
-    {% endif %}
-
-
-  </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
