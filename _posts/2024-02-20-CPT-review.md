@@ -1,7 +1,7 @@
 ---
 toc: False
 comments: true
-layout: default 
+layout: post 
 title: CSP Final / CPT Review
 type: tangibles
 courses: {'timebox': {'week': 23}}
