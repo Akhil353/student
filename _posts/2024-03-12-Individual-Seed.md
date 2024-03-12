@@ -10,6 +10,7 @@ courses: {'timebox': {'week': 25}}
 [Link to AP Preparation Team Teaches](https://github.com/nighthawkcoders/teacher_portfolio/issues/92#issuecomment-1887582267)
 
 CPT Key Commits:
+<br>
 [Added the main bulk of Messages API Code](https://github.com/SAAK-APCSP/Bluejay-Backend/commit/b44f79b8036b65a8854bebe401a214177529bb5a)
 <br>
 [Created Messages Database](https://github.com/SAAK-APCSP/Bluejay-Backend/commit/fab095578ea0b3cd384bbde56d3817515899b0b3)
