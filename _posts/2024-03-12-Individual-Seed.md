@@ -11,9 +11,15 @@ courses: {'timebox': {'week': 25}}
 
 CPT Key Commits:
 [Added the main bulk of Messages API Code](https://github.com/SAAK-APCSP/Bluejay-Backend/commit/b44f79b8036b65a8854bebe401a214177529bb5a)
+<br>
 [Created Messages Database](https://github.com/SAAK-APCSP/Bluejay-Backend/commit/fab095578ea0b3cd384bbde56d3817515899b0b3)
+
+<br>
 [Added send function to Messages API Code](https://github.com/SAAK-APCSP/Bluejay-Backend/commit/7baccb5dca19102cb158a3179ddd94949bc2bde7)
+
+<br>
 [Fixed authmiddleware to work with Messages](https://github.com/SAAK-APCSP/Bluejay-Backend/commit/05a6f578a119aa080dd64f2c4544745a25bd9517)
+<br>
 
 CPT Feature I contributed:
 - Users can send messages and see other messages that were sent in the past
@@ -29,7 +35,9 @@ Steps for personalization:
 
 Project Github
 [Frontend](https://github.com/SAAK-APCSP/Bluejay-Frontend)
+<br>
 [Backend](https://github.com/SAAK-APCSP/Bluejay-Backend)
 
 [Frontend Analytics](https://github.com/SAAK-APCSP/Bluejay-Frontend/graphs/contributors)
+<br>
 [Backend Analytics](https://github.com/SAAK-APCSP/Bluejay-Backend/graphs/contributors)
