@@ -41,3 +41,12 @@ Project Github
 [Frontend Analytics](https://github.com/SAAK-APCSP/Bluejay-Frontend/graphs/contributors)
 <br>
 [Backend Analytics](https://github.com/SAAK-APCSP/Bluejay-Backend/graphs/contributors)
+<br>
+<br>
+<br>
+
+[CPT Review](https://akhil353.github.io/student//2024/02/20/CPT-review.html)
+<br>
+[CPT Project Peer Review](https://github.com/Akhil353/student/issues/3)
+<br>
+[Pull Requests](https://github.com/SAAK-APCSP/Bluejay-Backend/pulls?q=is%3Apr+is%3Aclosed)
