@@ -1,7 +1,7 @@
 ---
 toc: False
 comments: True
-layout: default 
+layout: post 
 title: Data Structures
 type: tangibles
 courses: {'timebox': {'week': 30}}
