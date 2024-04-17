@@ -12,14 +12,14 @@ courses: {'timebox': {'week': 30}}
   - ![Image 1](/student/images/data-2.png)
 - From VSCode model, show your unique code that was created to initialize table and create test data.
   - ![Image 2](/student/images/data-1.png)
-
+----------------------------------------------------------------------------------
 ## Lists and Dictionaries
 - In VSCode using Debugger, show a list as extracted from database as Python objects.
   - ![Image 20](/student/images/data-20.png)
 - In VSCode use Debugger and list, show two distinct example examples of dictionaries, show Keys/Values using debugger.
   - ![Image 21](/student/images/data-21.png)
   - ![Image 22](/student/images/data-22.png)
-
+----------------------------------------------------------------------------------
 ## Blog Python API code and use of Postman to request and respond with JSON.
 - In VSCode, show Python API code definition for request and response using GET, POST, UPDATE methods. Discuss algorithmic condition used to direct request to appropriate Python method based on request method.
   - ![Image 3](/student/images/data-3.png)
@@ -44,7 +44,7 @@ courses: {'timebox': {'week': 30}}
 - In Postman, show the JSON response for error for 404 when providing an unknown user ID to a UPDATE request.
   - ![Image 8](/student/images/data-8.png)
     - NoneType error because the message doesn't exist
-
+----------------------------------------------------------------------------------
 ## Blog JavaScript API fetch code and formatting code to display JSON.
 - In Chrome inspect, show response of JSON objects from fetch of GET, POST, and UPDATE methods.
   - GET response
