@@ -7,19 +7,26 @@ type: tangibles
 courses: {'timebox': {'week': 30}}
 ---
 # Data Structures Write Up
+
+***
+
 ## Blog Python Model code and SQLite Database.
 - From VSCode using SQLite3 Editor, show your unique collection/table in database, display rows and columns in the table of the SQLite database.
   - ![Image 1](/student/images/data-2.png)
 - From VSCode model, show your unique code that was created to initialize table and create test data.
   - ![Image 2](/student/images/data-1.png)
-----------------------------------------------------------------------------------
+
+***
+
 ## Lists and Dictionaries
 - In VSCode using Debugger, show a list as extracted from database as Python objects.
   - ![Image 20](/student/images/data-20.png)
 - In VSCode use Debugger and list, show two distinct example examples of dictionaries, show Keys/Values using debugger.
   - ![Image 21](/student/images/data-21.png)
   - ![Image 22](/student/images/data-22.png)
-----------------------------------------------------------------------------------
+
+***
+
 ## Blog Python API code and use of Postman to request and respond with JSON.
 - In VSCode, show Python API code definition for request and response using GET, POST, UPDATE methods. Discuss algorithmic condition used to direct request to appropriate Python method based on request method.
   - ![Image 3](/student/images/data-3.png)
@@ -44,7 +51,9 @@ courses: {'timebox': {'week': 30}}
 - In Postman, show the JSON response for error for 404 when providing an unknown user ID to a UPDATE request.
   - ![Image 8](/student/images/data-8.png)
     - NoneType error because the message doesn't exist
-----------------------------------------------------------------------------------
+
+***
+
 ## Blog JavaScript API fetch code and formatting code to display JSON.
 - In Chrome inspect, show response of JSON objects from fetch of GET, POST, and UPDATE methods.
   - GET response
@@ -60,6 +69,7 @@ courses: {'timebox': {'week': 30}}
   - In JavaScript code, show code that performs iteration and formatting of data into HTML.
     - ![Image 17](/student/images/data-17.png)
 - In the Chrome browser, show a demo (POST or UPDATE) gathering and sending input and receiving a response that show update. Repeat this demo showing both success and failure.
+  - ![Image 23](/student/images/data-23.png)
   - In JavaScript code, show and describe code that handles success. Describe how code shows success to the user in the Chrome Browser screen.
     - ![Image 18](/student/images/data-18.png)
     - Upon the success of the fetch function, the posts display container will be updated to show the new container
