@@ -99,7 +99,7 @@ courses: {'timebox': {'week': 30}}
   - Show algorithms and preparation for predictions
     - ![ML 2](/student/images/ml-2.png)
     - ![ML 3](/student/images/ml-3.png)
-      - Model detects the face in the image and gets the width and height of the face. Then the model resizes the data to fit the input layer of the age/gender detection model. The output is decoded from the output neuron then converted into a percent and sent to frontend for display.
+      - Model detects the face in the image and gets the width and height of the face using OpenCV. The model does this by recognizing what pattern of pixels is similar to a human face by applying filters to the image data (image data is filtered into 3 channels for each color). Then the model resizes the data to fit the input layer of the age/gender detection model using the same process as the first step. The output is decoded from the output neuron then converted into a percent and sent to frontend for display.
   - Linear Regression
     - Linear Regression models create a line of best fit by minimizing the distance from each point in the given data without overfitting. This allows for an accurate prediction of some data based of inputted data.
   - Decision Trees
