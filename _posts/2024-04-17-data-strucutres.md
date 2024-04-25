@@ -95,9 +95,11 @@ courses: {'timebox': {'week': 30}}
 ## Machine Learning Algorith Analysis
   - Show algorithms and preparation of data for analysis
     - ![ML 1](/student/images/ml-1.png)
+      - Makes sure the pixel count of the image (width x height) matches what the model feeds into the input layer for proper analysis of data
   - Show algorithms and preparation for predictions
     - ![ML 2](/student/images/ml-2.png)
     - ![ML 3](/student/images/ml-3.png)
+      - Model detects the face in the image and gets the width and height of the face. Then the model resizes the data to fit the input layer of the age/gender detection model. The output is decoded from the output neuron then converted into a percent and sent to frontend for display.
   - Linear Regression
     - Linear Regression models create a line of best fit by minimizing the distance from each point in the given data without overfitting. This allows for an accurate prediction of some data based of inputted data.
   - Decision Trees
