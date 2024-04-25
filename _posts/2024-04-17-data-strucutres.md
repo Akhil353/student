@@ -89,3 +89,16 @@ courses: {'timebox': {'week': 30}}
   - In JavaScript code, show and describe code that handles failure. Describe how the code shows failure to the user in the Chrome Browser screen.
     - ![Image 19](/student/images/data-19.png)
       - If the data isn't sent properly/an error occurs, the message is aborted and nothing new is shown to the user.
+
+***
+
+## Machine Learning Algorith Analysis
+  - Show algorithms and preparation of data for analysis
+    - ![ML 1](/student/images/ml-1.png)
+  - Show algorithms and preparation for predictions
+    - ![ML 2](/student/images/ml-2.png)
+    - ![ML 3](/student/images/ml-3.png)
+  - Linear Regression
+    - Linear Regression models create a line of best fit by minimizing the distance from each point in the given data without overfitting. This allows for an accurate prediction of some data based of inputted data.
+  - Decision Trees
+    - Decision Tree models use multiple features of data in a database to predict the value of another column (typically true/false output, can also be modified for multi-class classification). The inputted data is passed through nodes that split into other nodes, and at the end of the decision tree there are "terminal nodes" that give the output for the predicted value.
