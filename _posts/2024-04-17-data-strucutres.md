@@ -13,7 +13,7 @@ courses: {'timebox': {'week': 30}}
 ## Blog Python Model code and SQLite Database.
 - From VSCode using SQLite3 Editor, show your unique collection/table in database, display rows and columns in the table of the SQLite database.
   - ![Image 1](/student/images/data-2.png)
-    - There are multiple rows for each entry, and each column is a different data point (name, uid, join date, etc.). First 4 entries are preset by DB, and the others are added users
+    - There are multiple rows for each entry, and each column is a different data point (name, uid, join date, etc.). First 4 entries are preset by DB, and the others are added users. This DB can be used to add a lot of users, and can be scaled easily to allow for more users.
 - From VSCode model, show your unique code that was created to initialize table and create test data.
   - ![Image 2](/student/images/data-1.png)
     - Adds test information to the database to make sure the main file has run properly. The users added can be seen in the first 4 rows of the DB
@@ -23,26 +23,26 @@ courses: {'timebox': {'week': 30}}
 ## Lists and Dictionaries
 - In VSCode using Debugger, show a list as extracted from database as Python objects.
   - ![Image 20](/student/images/data-20.png)
-    - Shows all the messages using the GET function as a dictionary (date added, likes, message body, etc.)
+    - Shows all the messages using the GET function as a dictionary (date added, likes, message body, etc.) Function accessed by frontend to display messages to users.
 - In VSCode use Debugger and list, show two distinct example examples of dictionaries, show Keys/Values using debugger.
   - ![Image 21](/student/images/data-21.png)
   - ![Image 22](/student/images/data-22.png)
-    - Shows the information from the GET function as dictionaries in a big list
+    - Shows the information from the GET function as dictionaries in a big list. This data can be iterated for the frontend to deal with the data.
 
 ***
 
 ## Blog Python API code and use of Postman to request and respond with JSON.
 - In VSCode, show Python API code definition for request and response using GET, POST, UPDATE methods. Discuss algorithmic condition used to direct request to appropriate Python method based on request method.
   - ![Image 3](/student/images/data-3.png)
-    - Shows POST, GET, and PUT functions in the python API file. POST function adds info, GET function returns info from DB, PUT function updates existing data
+    - Shows POST, GET, and PUT functions in the python API file. POST function adds info, GET function returns info from DB, PUT function updates existing data. Frontend uses these functions by using the fetch() function
 - In VSCode, show algorithmic conditions used to validate data on a POST condition.
   - ![Image 4](/student/images/data-4.png)
-    - Uses an algorithmic condition (if message content not missing) to check if data was sent, else return 400 error
+    - Uses an algorithmic condition (if message content not missing) to check if data was sent, else return 400 error. Makes sure that an error is not displayed so that all the messages are blank.
 - In Postman, show URL request and Body requirements for GET, POST, and UPDATE methods.
   - ![Image 5](/student/images/data-5.png)
-    - Message, likes, and cookies required for POST request
+    - Message, likes, and cookies required for POST request to make sure the user is authenticated/sent all the data needed for a message
   - ![Image 11](/student/images/data-11.png)
-    - Cookies required for GET request
+    - Cookies required for GET request to make sure only users can see the messages.
   - ![Image 12](/student/images/data-12.png)
     - Message required for update method so the original message can be found
 - In Postman, show the JSON response data for 200 success conditions on GET, POST, and UPDATE methods.
@@ -65,7 +65,7 @@ courses: {'timebox': {'week': 30}}
 - In Chrome inspect, show response of JSON objects from fetch of GET, POST, and UPDATE methods.
   - GET response
     - ![Image 13](/student/images/data-13.png)
-      - All the previous posts from the database are shown as a collection of dictionaries from the GET request
+      - All the previous posts from the database are shown as a collection of dictionaries from the GET request. This data can be shown by accessing elements of the dictionary to show on frontend.
   - POST response
     - ![Image 14](/student/images/data-14.png)
       - The message that was posted using POST function is returned so the frontend can display the newly shown message
